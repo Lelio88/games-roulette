@@ -1,0 +1,5954 @@
+{
+  "entities": [
+    {
+      "name": "Creeper",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/creeper_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/creeper_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/creeper_say3.ogg"
+        },
+        {
+          "label": "say 4",
+          "action": "say",
+          "n": 4,
+          "path": "assets/sounds/creeper_say4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/creeper_say1.ogg",
+      "texture": "assets/textures/creeper.png",
+      "render": "assets/renders/creeper.png",
+      "color": "#3aa856"
+    },
+    {
+      "name": "Zombie",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/zombie_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/zombie_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/zombie_say3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/zombie_say1.ogg",
+      "texture": "assets/textures/zombie.png",
+      "render": "assets/renders/zombie.png",
+      "color": "#4a7a3a"
+    },
+    {
+      "name": "Skeleton",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/skeleton_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/skeleton_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/skeleton_say3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/skeleton_say1.ogg",
+      "texture": "assets/textures/skeleton.png",
+      "render": "assets/renders/skeleton.png",
+      "color": "#c2c2c2"
+    },
+    {
+      "name": "Wither Skeleton",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/wither_skeleton_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/wither_skeleton_death2.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/wither_skeleton_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/wither_skeleton_hurt2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/wither_skeleton_hurt3.ogg"
+        },
+        {
+          "label": "hurt 4",
+          "action": "hurt",
+          "n": 4,
+          "path": "assets/sounds/wither_skeleton_hurt4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/wither_skeleton_death1.ogg",
+      "texture": "assets/textures/wither_skeleton.png",
+      "render": "assets/renders/wither_skeleton.png",
+      "color": "#3a3a3a"
+    },
+    {
+      "name": "Spider",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/spider_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/spider_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/spider_say3.ogg"
+        },
+        {
+          "label": "say 4",
+          "action": "say",
+          "n": 4,
+          "path": "assets/sounds/spider_say4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/spider_say1.ogg",
+      "texture": "assets/textures/spider.png",
+      "render": "assets/renders/spider.png",
+      "color": "#5a2a2a"
+    },
+    {
+      "name": "Enderman",
+      "type": "neutral",
+      "sounds": [
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/enderman_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/enderman_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/enderman_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/enderman_idle4.ogg"
+        },
+        {
+          "label": "idle 5",
+          "action": "idle",
+          "n": 5,
+          "path": "assets/sounds/enderman_idle5.ogg"
+        }
+      ],
+      "sound": "assets/sounds/enderman_idle1.ogg",
+      "texture": "assets/textures/enderman.png",
+      "render": "assets/renders/enderman.png",
+      "color": "#1a1a2e"
+    },
+    {
+      "name": "Witch",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "ambient 1",
+          "action": "ambient",
+          "n": 1,
+          "path": "assets/sounds/witch_ambient1.ogg"
+        },
+        {
+          "label": "ambient 2",
+          "action": "ambient",
+          "n": 2,
+          "path": "assets/sounds/witch_ambient2.ogg"
+        },
+        {
+          "label": "ambient 3",
+          "action": "ambient",
+          "n": 3,
+          "path": "assets/sounds/witch_ambient3.ogg"
+        },
+        {
+          "label": "ambient 4",
+          "action": "ambient",
+          "n": 4,
+          "path": "assets/sounds/witch_ambient4.ogg"
+        },
+        {
+          "label": "ambient 5",
+          "action": "ambient",
+          "n": 5,
+          "path": "assets/sounds/witch_ambient5.ogg"
+        },
+        {
+          "label": "celebrate",
+          "action": "celebrate",
+          "n": 0,
+          "path": "assets/sounds/witch_celebrate.ogg"
+        }
+      ],
+      "sound": "assets/sounds/witch_ambient1.ogg",
+      "texture": "assets/textures/witch.png",
+      "render": "assets/renders/witch.png",
+      "color": "#6a3a8a"
+    },
+    {
+      "name": "Blaze",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "breathe 1",
+          "action": "breathe",
+          "n": 1,
+          "path": "assets/sounds/blaze_breathe1.ogg"
+        },
+        {
+          "label": "breathe 2",
+          "action": "breathe",
+          "n": 2,
+          "path": "assets/sounds/blaze_breathe2.ogg"
+        },
+        {
+          "label": "breathe 3",
+          "action": "breathe",
+          "n": 3,
+          "path": "assets/sounds/blaze_breathe3.ogg"
+        },
+        {
+          "label": "breathe 4",
+          "action": "breathe",
+          "n": 4,
+          "path": "assets/sounds/blaze_breathe4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/blaze_breathe1.ogg",
+      "texture": "assets/textures/blaze.png",
+      "render": "assets/renders/blaze.png",
+      "color": "#ffa500"
+    },
+    {
+      "name": "Ghast",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "moan 1",
+          "action": "moan",
+          "n": 1,
+          "path": "assets/sounds/ghast_moan1.ogg"
+        },
+        {
+          "label": "moan 2",
+          "action": "moan",
+          "n": 2,
+          "path": "assets/sounds/ghast_moan2.ogg"
+        },
+        {
+          "label": "moan 3",
+          "action": "moan",
+          "n": 3,
+          "path": "assets/sounds/ghast_moan3.ogg"
+        },
+        {
+          "label": "moan 4",
+          "action": "moan",
+          "n": 4,
+          "path": "assets/sounds/ghast_moan4.ogg"
+        },
+        {
+          "label": "moan 5",
+          "action": "moan",
+          "n": 5,
+          "path": "assets/sounds/ghast_moan5.ogg"
+        },
+        {
+          "label": "moan 6",
+          "action": "moan",
+          "n": 6,
+          "path": "assets/sounds/ghast_moan6.ogg"
+        },
+        {
+          "label": "moan 7",
+          "action": "moan",
+          "n": 7,
+          "path": "assets/sounds/ghast_moan7.ogg"
+        },
+        {
+          "label": "scream 1",
+          "action": "scream",
+          "n": 1,
+          "path": "assets/sounds/ghast_scream1.ogg"
+        },
+        {
+          "label": "scream 2",
+          "action": "scream",
+          "n": 2,
+          "path": "assets/sounds/ghast_scream2.ogg"
+        },
+        {
+          "label": "scream 3",
+          "action": "scream",
+          "n": 3,
+          "path": "assets/sounds/ghast_scream3.ogg"
+        },
+        {
+          "label": "scream 4",
+          "action": "scream",
+          "n": 4,
+          "path": "assets/sounds/ghast_scream4.ogg"
+        },
+        {
+          "label": "scream 5",
+          "action": "scream",
+          "n": 5,
+          "path": "assets/sounds/ghast_scream5.ogg"
+        }
+      ],
+      "sound": "assets/sounds/ghast_moan1.ogg",
+      "texture": "assets/textures/ghast.png",
+      "render": "assets/renders/ghast.png",
+      "color": "#f0f0f0"
+    },
+    {
+      "name": "Slime",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "big 1",
+          "action": "big",
+          "n": 1,
+          "path": "assets/sounds/slime_big1.ogg"
+        },
+        {
+          "label": "big 2",
+          "action": "big",
+          "n": 2,
+          "path": "assets/sounds/slime_big2.ogg"
+        },
+        {
+          "label": "big 3",
+          "action": "big",
+          "n": 3,
+          "path": "assets/sounds/slime_big3.ogg"
+        },
+        {
+          "label": "big 4",
+          "action": "big",
+          "n": 4,
+          "path": "assets/sounds/slime_big4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/slime_big1.ogg",
+      "texture": "assets/textures/slime.png",
+      "render": "assets/renders/slime.png",
+      "color": "#7acb5b"
+    },
+    {
+      "name": "Magma Cube",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "big 1",
+          "action": "big",
+          "n": 1,
+          "path": "assets/sounds/magma_cube_big1.ogg"
+        },
+        {
+          "label": "big 2",
+          "action": "big",
+          "n": 2,
+          "path": "assets/sounds/magma_cube_big2.ogg"
+        },
+        {
+          "label": "big 3",
+          "action": "big",
+          "n": 3,
+          "path": "assets/sounds/magma_cube_big3.ogg"
+        },
+        {
+          "label": "big 4",
+          "action": "big",
+          "n": 4,
+          "path": "assets/sounds/magma_cube_big4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/magma_cube_big1.ogg",
+      "texture": "assets/textures/magma_cube.png",
+      "render": "assets/renders/magma_cube.png",
+      "color": "#e23a1a"
+    },
+    {
+      "name": "Wither",
+      "type": "boss",
+      "sounds": [
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/wither_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/wither_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/wither_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/wither_idle4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/wither_idle1.ogg",
+      "texture": "assets/textures/wither.png",
+      "render": "assets/renders/wither.png",
+      "color": "#2a2a2a"
+    },
+    {
+      "name": "Piglin",
+      "type": "neutral",
+      "sounds": [
+        {
+          "label": "admire 1",
+          "action": "admire",
+          "n": 1,
+          "path": "assets/sounds/piglin_admire1.ogg"
+        },
+        {
+          "label": "admire 2",
+          "action": "admire",
+          "n": 2,
+          "path": "assets/sounds/piglin_admire2.ogg"
+        },
+        {
+          "label": "angry 1",
+          "action": "angry",
+          "n": 1,
+          "path": "assets/sounds/piglin_angry1.ogg"
+        },
+        {
+          "label": "angry 2",
+          "action": "angry",
+          "n": 2,
+          "path": "assets/sounds/piglin_angry2.ogg"
+        },
+        {
+          "label": "angry 3",
+          "action": "angry",
+          "n": 3,
+          "path": "assets/sounds/piglin_angry3.ogg"
+        },
+        {
+          "label": "angry 4",
+          "action": "angry",
+          "n": 4,
+          "path": "assets/sounds/piglin_angry4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/piglin_admire1.ogg",
+      "texture": "assets/textures/piglin.png",
+      "render": "assets/renders/piglin.png",
+      "color": "#d9a26a"
+    },
+    {
+      "name": "Phantom",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "bite 1",
+          "action": "bite",
+          "n": 1,
+          "path": "assets/sounds/phantom_bite1.ogg"
+        },
+        {
+          "label": "bite 2",
+          "action": "bite",
+          "n": 2,
+          "path": "assets/sounds/phantom_bite2.ogg"
+        },
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/phantom_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/phantom_death2.ogg"
+        },
+        {
+          "label": "death 3",
+          "action": "death",
+          "n": 3,
+          "path": "assets/sounds/phantom_death3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/phantom_bite1.ogg",
+      "texture": "assets/textures/phantom.png",
+      "render": "assets/renders/phantom.png",
+      "color": "#3a3a5e"
+    },
+    {
+      "name": "Shulker",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "ambient 1",
+          "action": "ambient",
+          "n": 1,
+          "path": "assets/sounds/shulker_ambient1.ogg"
+        },
+        {
+          "label": "ambient 2",
+          "action": "ambient",
+          "n": 2,
+          "path": "assets/sounds/shulker_ambient2.ogg"
+        },
+        {
+          "label": "ambient 3",
+          "action": "ambient",
+          "n": 3,
+          "path": "assets/sounds/shulker_ambient3.ogg"
+        },
+        {
+          "label": "ambient 4",
+          "action": "ambient",
+          "n": 4,
+          "path": "assets/sounds/shulker_ambient4.ogg"
+        },
+        {
+          "label": "ambient 5",
+          "action": "ambient",
+          "n": 5,
+          "path": "assets/sounds/shulker_ambient5.ogg"
+        },
+        {
+          "label": "ambient 6",
+          "action": "ambient",
+          "n": 6,
+          "path": "assets/sounds/shulker_ambient6.ogg"
+        },
+        {
+          "label": "ambient 7",
+          "action": "ambient",
+          "n": 7,
+          "path": "assets/sounds/shulker_ambient7.ogg"
+        }
+      ],
+      "sound": "assets/sounds/shulker_ambient1.ogg",
+      "texture": "assets/textures/shulker.png",
+      "render": "assets/renders/shulker.png",
+      "color": "#7e6680"
+    },
+    {
+      "name": "Pillager",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "celebrate 1",
+          "action": "celebrate",
+          "n": 1,
+          "path": "assets/sounds/pillager_celebrate1.ogg"
+        },
+        {
+          "label": "celebrate 2",
+          "action": "celebrate",
+          "n": 2,
+          "path": "assets/sounds/pillager_celebrate2.ogg"
+        },
+        {
+          "label": "celebrate 3",
+          "action": "celebrate",
+          "n": 3,
+          "path": "assets/sounds/pillager_celebrate3.ogg"
+        },
+        {
+          "label": "celebrate 4",
+          "action": "celebrate",
+          "n": 4,
+          "path": "assets/sounds/pillager_celebrate4.ogg"
+        },
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/pillager_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/pillager_death2.ogg"
+        }
+      ],
+      "sound": "assets/sounds/pillager_celebrate1.ogg",
+      "texture": "assets/textures/pillager.png",
+      "render": "assets/renders/pillager.png",
+      "color": "#5a6a6a"
+    },
+    {
+      "name": "Evoker",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "cast 1",
+          "action": "cast",
+          "n": 1,
+          "path": "assets/sounds/evoker_cast1.ogg"
+        },
+        {
+          "label": "cast 2",
+          "action": "cast",
+          "n": 2,
+          "path": "assets/sounds/evoker_cast2.ogg"
+        },
+        {
+          "label": "celebrate",
+          "action": "celebrate",
+          "n": 0,
+          "path": "assets/sounds/evoker_celebrate.ogg"
+        },
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/evoker_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/evoker_death2.ogg"
+        },
+        {
+          "label": "fangs",
+          "action": "fangs",
+          "n": 0,
+          "path": "assets/sounds/evoker_fangs.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/evoker_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/evoker_hurt2.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/evoker_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/evoker_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/evoker_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/evoker_idle4.ogg"
+        },
+        {
+          "label": "prepare attack 1",
+          "action": "prepare attack",
+          "n": 1,
+          "path": "assets/sounds/evoker_prepare_attack1.ogg"
+        },
+        {
+          "label": "prepare attack 2",
+          "action": "prepare attack",
+          "n": 2,
+          "path": "assets/sounds/evoker_prepare_attack2.ogg"
+        },
+        {
+          "label": "prepare summon",
+          "action": "prepare summon",
+          "n": 0,
+          "path": "assets/sounds/evoker_prepare_summon.ogg"
+        },
+        {
+          "label": "prepare wololo",
+          "action": "prepare wololo",
+          "n": 0,
+          "path": "assets/sounds/evoker_prepare_wololo.ogg"
+        }
+      ],
+      "sound": "assets/sounds/evoker_cast1.ogg",
+      "texture": "assets/textures/evoker.png",
+      "render": "assets/renders/evoker.png",
+      "color": "#a0a0a0"
+    },
+    {
+      "name": "Ravager",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "bite 1",
+          "action": "bite",
+          "n": 1,
+          "path": "assets/sounds/ravager_bite1.ogg"
+        },
+        {
+          "label": "bite 2",
+          "action": "bite",
+          "n": 2,
+          "path": "assets/sounds/ravager_bite2.ogg"
+        },
+        {
+          "label": "bite 3",
+          "action": "bite",
+          "n": 3,
+          "path": "assets/sounds/ravager_bite3.ogg"
+        },
+        {
+          "label": "celebrate 1",
+          "action": "celebrate",
+          "n": 1,
+          "path": "assets/sounds/ravager_celebrate1.ogg"
+        },
+        {
+          "label": "celebrate 2",
+          "action": "celebrate",
+          "n": 2,
+          "path": "assets/sounds/ravager_celebrate2.ogg"
+        }
+      ],
+      "sound": "assets/sounds/ravager_bite1.ogg",
+      "texture": "assets/textures/ravager.png",
+      "render": "assets/renders/ravager.png",
+      "color": "#6a5a4a"
+    },
+    {
+      "name": "Guardian",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "ambient 1",
+          "action": "ambient",
+          "n": 1,
+          "path": "assets/sounds/guardian_ambient1.ogg"
+        },
+        {
+          "label": "ambient 2",
+          "action": "ambient",
+          "n": 2,
+          "path": "assets/sounds/guardian_ambient2.ogg"
+        },
+        {
+          "label": "ambient 3",
+          "action": "ambient",
+          "n": 3,
+          "path": "assets/sounds/guardian_ambient3.ogg"
+        },
+        {
+          "label": "ambient 4",
+          "action": "ambient",
+          "n": 4,
+          "path": "assets/sounds/guardian_ambient4.ogg"
+        },
+        {
+          "label": "attack loop",
+          "action": "attack loop",
+          "n": 0,
+          "path": "assets/sounds/guardian_attack_loop.ogg"
+        },
+        {
+          "label": "curse",
+          "action": "curse",
+          "n": 0,
+          "path": "assets/sounds/guardian_curse.ogg"
+        },
+        {
+          "label": "elder death",
+          "action": "elder death",
+          "n": 0,
+          "path": "assets/sounds/guardian_elder_death.ogg"
+        },
+        {
+          "label": "elder hit 1",
+          "action": "elder hit",
+          "n": 1,
+          "path": "assets/sounds/guardian_elder_hit1.ogg"
+        },
+        {
+          "label": "elder hit 2",
+          "action": "elder hit",
+          "n": 2,
+          "path": "assets/sounds/guardian_elder_hit2.ogg"
+        },
+        {
+          "label": "elder hit 3",
+          "action": "elder hit",
+          "n": 3,
+          "path": "assets/sounds/guardian_elder_hit3.ogg"
+        },
+        {
+          "label": "elder hit 4",
+          "action": "elder hit",
+          "n": 4,
+          "path": "assets/sounds/guardian_elder_hit4.ogg"
+        },
+        {
+          "label": "elder idle 1",
+          "action": "elder idle",
+          "n": 1,
+          "path": "assets/sounds/guardian_elder_idle1.ogg"
+        },
+        {
+          "label": "elder idle 2",
+          "action": "elder idle",
+          "n": 2,
+          "path": "assets/sounds/guardian_elder_idle2.ogg"
+        },
+        {
+          "label": "elder idle 3",
+          "action": "elder idle",
+          "n": 3,
+          "path": "assets/sounds/guardian_elder_idle3.ogg"
+        },
+        {
+          "label": "elder idle 4",
+          "action": "elder idle",
+          "n": 4,
+          "path": "assets/sounds/guardian_elder_idle4.ogg"
+        },
+        {
+          "label": "flop 1",
+          "action": "flop",
+          "n": 1,
+          "path": "assets/sounds/guardian_flop1.ogg"
+        },
+        {
+          "label": "flop 2",
+          "action": "flop",
+          "n": 2,
+          "path": "assets/sounds/guardian_flop2.ogg"
+        },
+        {
+          "label": "flop 3",
+          "action": "flop",
+          "n": 3,
+          "path": "assets/sounds/guardian_flop3.ogg"
+        },
+        {
+          "label": "flop 4",
+          "action": "flop",
+          "n": 4,
+          "path": "assets/sounds/guardian_flop4.ogg"
+        },
+        {
+          "label": "guardian death",
+          "action": "guardian death",
+          "n": 0,
+          "path": "assets/sounds/guardian_guardian_death.ogg"
+        },
+        {
+          "label": "guardian hit 1",
+          "action": "guardian hit",
+          "n": 1,
+          "path": "assets/sounds/guardian_guardian_hit1.ogg"
+        },
+        {
+          "label": "guardian hit 2",
+          "action": "guardian hit",
+          "n": 2,
+          "path": "assets/sounds/guardian_guardian_hit2.ogg"
+        },
+        {
+          "label": "guardian hit 3",
+          "action": "guardian hit",
+          "n": 3,
+          "path": "assets/sounds/guardian_guardian_hit3.ogg"
+        },
+        {
+          "label": "guardian hit 4",
+          "action": "guardian hit",
+          "n": 4,
+          "path": "assets/sounds/guardian_guardian_hit4.ogg"
+        },
+        {
+          "label": "land death",
+          "action": "land death",
+          "n": 0,
+          "path": "assets/sounds/guardian_land_death.ogg"
+        },
+        {
+          "label": "land hit 1",
+          "action": "land hit",
+          "n": 1,
+          "path": "assets/sounds/guardian_land_hit1.ogg"
+        },
+        {
+          "label": "land hit 2",
+          "action": "land hit",
+          "n": 2,
+          "path": "assets/sounds/guardian_land_hit2.ogg"
+        },
+        {
+          "label": "land hit 3",
+          "action": "land hit",
+          "n": 3,
+          "path": "assets/sounds/guardian_land_hit3.ogg"
+        },
+        {
+          "label": "land hit 4",
+          "action": "land hit",
+          "n": 4,
+          "path": "assets/sounds/guardian_land_hit4.ogg"
+        },
+        {
+          "label": "land idle 1",
+          "action": "land idle",
+          "n": 1,
+          "path": "assets/sounds/guardian_land_idle1.ogg"
+        },
+        {
+          "label": "land idle 2",
+          "action": "land idle",
+          "n": 2,
+          "path": "assets/sounds/guardian_land_idle2.ogg"
+        },
+        {
+          "label": "land idle 3",
+          "action": "land idle",
+          "n": 3,
+          "path": "assets/sounds/guardian_land_idle3.ogg"
+        },
+        {
+          "label": "land idle 4",
+          "action": "land idle",
+          "n": 4,
+          "path": "assets/sounds/guardian_land_idle4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/guardian_ambient1.ogg",
+      "texture": "assets/textures/guardian.png",
+      "render": "assets/renders/guardian.png",
+      "color": "#4a8a6a"
+    },
+    {
+      "name": "Warden",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "agitated 1",
+          "action": "agitated",
+          "n": 1,
+          "path": "assets/sounds/warden_agitated_1.ogg"
+        },
+        {
+          "label": "agitated 2",
+          "action": "agitated",
+          "n": 2,
+          "path": "assets/sounds/warden_agitated_2.ogg"
+        },
+        {
+          "label": "agitated 3",
+          "action": "agitated",
+          "n": 3,
+          "path": "assets/sounds/warden_agitated_3.ogg"
+        },
+        {
+          "label": "agitated 4",
+          "action": "agitated",
+          "n": 4,
+          "path": "assets/sounds/warden_agitated_4.ogg"
+        },
+        {
+          "label": "agitated 5",
+          "action": "agitated",
+          "n": 5,
+          "path": "assets/sounds/warden_agitated_5.ogg"
+        },
+        {
+          "label": "agitated 6",
+          "action": "agitated",
+          "n": 6,
+          "path": "assets/sounds/warden_agitated_6.ogg"
+        },
+        {
+          "label": "ambient 1",
+          "action": "ambient",
+          "n": 1,
+          "path": "assets/sounds/warden_ambient_1.ogg"
+        },
+        {
+          "label": "ambient 2",
+          "action": "ambient",
+          "n": 2,
+          "path": "assets/sounds/warden_ambient_2.ogg"
+        },
+        {
+          "label": "ambient 3",
+          "action": "ambient",
+          "n": 3,
+          "path": "assets/sounds/warden_ambient_3.ogg"
+        },
+        {
+          "label": "ambient 4",
+          "action": "ambient",
+          "n": 4,
+          "path": "assets/sounds/warden_ambient_4.ogg"
+        },
+        {
+          "label": "ambient 5",
+          "action": "ambient",
+          "n": 5,
+          "path": "assets/sounds/warden_ambient_5.ogg"
+        },
+        {
+          "label": "ambient 6",
+          "action": "ambient",
+          "n": 6,
+          "path": "assets/sounds/warden_ambient_6.ogg"
+        },
+        {
+          "label": "ambient 7",
+          "action": "ambient",
+          "n": 7,
+          "path": "assets/sounds/warden_ambient_7.ogg"
+        },
+        {
+          "label": "ambient 8",
+          "action": "ambient",
+          "n": 8,
+          "path": "assets/sounds/warden_ambient_8.ogg"
+        },
+        {
+          "label": "ambient 9",
+          "action": "ambient",
+          "n": 9,
+          "path": "assets/sounds/warden_ambient_9.ogg"
+        },
+        {
+          "label": "ambient 10",
+          "action": "ambient",
+          "n": 10,
+          "path": "assets/sounds/warden_ambient_10.ogg"
+        },
+        {
+          "label": "ambient 11",
+          "action": "ambient",
+          "n": 11,
+          "path": "assets/sounds/warden_ambient_11.ogg"
+        },
+        {
+          "label": "ambient 12",
+          "action": "ambient",
+          "n": 12,
+          "path": "assets/sounds/warden_ambient_12.ogg"
+        },
+        {
+          "label": "angry 1",
+          "action": "angry",
+          "n": 1,
+          "path": "assets/sounds/warden_angry_1.ogg"
+        },
+        {
+          "label": "angry 2",
+          "action": "angry",
+          "n": 2,
+          "path": "assets/sounds/warden_angry_2.ogg"
+        },
+        {
+          "label": "angry 3",
+          "action": "angry",
+          "n": 3,
+          "path": "assets/sounds/warden_angry_3.ogg"
+        },
+        {
+          "label": "angry 4",
+          "action": "angry",
+          "n": 4,
+          "path": "assets/sounds/warden_angry_4.ogg"
+        },
+        {
+          "label": "angry 5",
+          "action": "angry",
+          "n": 5,
+          "path": "assets/sounds/warden_angry_5.ogg"
+        },
+        {
+          "label": "angry 6",
+          "action": "angry",
+          "n": 6,
+          "path": "assets/sounds/warden_angry_6.ogg"
+        },
+        {
+          "label": "attack impact 1",
+          "action": "attack impact",
+          "n": 1,
+          "path": "assets/sounds/warden_attack_impact_1.ogg"
+        },
+        {
+          "label": "attack impact 2",
+          "action": "attack impact",
+          "n": 2,
+          "path": "assets/sounds/warden_attack_impact_2.ogg"
+        },
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/warden_death_1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/warden_death_2.ogg"
+        },
+        {
+          "label": "dig",
+          "action": "dig",
+          "n": 0,
+          "path": "assets/sounds/warden_dig.ogg"
+        },
+        {
+          "label": "emerge",
+          "action": "emerge",
+          "n": 0,
+          "path": "assets/sounds/warden_emerge.ogg"
+        },
+        {
+          "label": "heartbeat 1",
+          "action": "heartbeat",
+          "n": 1,
+          "path": "assets/sounds/warden_heartbeat_1.ogg"
+        },
+        {
+          "label": "heartbeat 2",
+          "action": "heartbeat",
+          "n": 2,
+          "path": "assets/sounds/warden_heartbeat_2.ogg"
+        },
+        {
+          "label": "heartbeat 3",
+          "action": "heartbeat",
+          "n": 3,
+          "path": "assets/sounds/warden_heartbeat_3.ogg"
+        },
+        {
+          "label": "heartbeat 4",
+          "action": "heartbeat",
+          "n": 4,
+          "path": "assets/sounds/warden_heartbeat_4.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/warden_hurt_1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/warden_hurt_2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/warden_hurt_3.ogg"
+        },
+        {
+          "label": "hurt 4",
+          "action": "hurt",
+          "n": 4,
+          "path": "assets/sounds/warden_hurt_4.ogg"
+        },
+        {
+          "label": "listening 1",
+          "action": "listening",
+          "n": 1,
+          "path": "assets/sounds/warden_listening_1.ogg"
+        },
+        {
+          "label": "listening 2",
+          "action": "listening",
+          "n": 2,
+          "path": "assets/sounds/warden_listening_2.ogg"
+        },
+        {
+          "label": "listening 3",
+          "action": "listening",
+          "n": 3,
+          "path": "assets/sounds/warden_listening_3.ogg"
+        },
+        {
+          "label": "listening 4",
+          "action": "listening",
+          "n": 4,
+          "path": "assets/sounds/warden_listening_4.ogg"
+        },
+        {
+          "label": "listening 5",
+          "action": "listening",
+          "n": 5,
+          "path": "assets/sounds/warden_listening_5.ogg"
+        },
+        {
+          "label": "listening angry 1",
+          "action": "listening angry",
+          "n": 1,
+          "path": "assets/sounds/warden_listening_angry_1.ogg"
+        },
+        {
+          "label": "listening angry 2",
+          "action": "listening angry",
+          "n": 2,
+          "path": "assets/sounds/warden_listening_angry_2.ogg"
+        },
+        {
+          "label": "listening angry 3",
+          "action": "listening angry",
+          "n": 3,
+          "path": "assets/sounds/warden_listening_angry_3.ogg"
+        },
+        {
+          "label": "listening angry 4",
+          "action": "listening angry",
+          "n": 4,
+          "path": "assets/sounds/warden_listening_angry_4.ogg"
+        },
+        {
+          "label": "listening angry 5",
+          "action": "listening angry",
+          "n": 5,
+          "path": "assets/sounds/warden_listening_angry_5.ogg"
+        },
+        {
+          "label": "nearby close 1",
+          "action": "nearby close",
+          "n": 1,
+          "path": "assets/sounds/warden_nearby_close_1.ogg"
+        },
+        {
+          "label": "nearby close 2",
+          "action": "nearby close",
+          "n": 2,
+          "path": "assets/sounds/warden_nearby_close_2.ogg"
+        },
+        {
+          "label": "nearby close 3",
+          "action": "nearby close",
+          "n": 3,
+          "path": "assets/sounds/warden_nearby_close_3.ogg"
+        },
+        {
+          "label": "nearby close 4",
+          "action": "nearby close",
+          "n": 4,
+          "path": "assets/sounds/warden_nearby_close_4.ogg"
+        },
+        {
+          "label": "nearby closer 1",
+          "action": "nearby closer",
+          "n": 1,
+          "path": "assets/sounds/warden_nearby_closer_1.ogg"
+        },
+        {
+          "label": "nearby closer 2",
+          "action": "nearby closer",
+          "n": 2,
+          "path": "assets/sounds/warden_nearby_closer_2.ogg"
+        },
+        {
+          "label": "nearby closer 3",
+          "action": "nearby closer",
+          "n": 3,
+          "path": "assets/sounds/warden_nearby_closer_3.ogg"
+        },
+        {
+          "label": "nearby closest 1",
+          "action": "nearby closest",
+          "n": 1,
+          "path": "assets/sounds/warden_nearby_closest_1.ogg"
+        },
+        {
+          "label": "nearby closest 2",
+          "action": "nearby closest",
+          "n": 2,
+          "path": "assets/sounds/warden_nearby_closest_2.ogg"
+        },
+        {
+          "label": "nearby closest 3",
+          "action": "nearby closest",
+          "n": 3,
+          "path": "assets/sounds/warden_nearby_closest_3.ogg"
+        },
+        {
+          "label": "roar 1",
+          "action": "roar",
+          "n": 1,
+          "path": "assets/sounds/warden_roar_1.ogg"
+        },
+        {
+          "label": "roar 2",
+          "action": "roar",
+          "n": 2,
+          "path": "assets/sounds/warden_roar_2.ogg"
+        },
+        {
+          "label": "roar 3",
+          "action": "roar",
+          "n": 3,
+          "path": "assets/sounds/warden_roar_3.ogg"
+        },
+        {
+          "label": "roar 4",
+          "action": "roar",
+          "n": 4,
+          "path": "assets/sounds/warden_roar_4.ogg"
+        },
+        {
+          "label": "roar 5",
+          "action": "roar",
+          "n": 5,
+          "path": "assets/sounds/warden_roar_5.ogg"
+        },
+        {
+          "label": "sniff 1",
+          "action": "sniff",
+          "n": 1,
+          "path": "assets/sounds/warden_sniff_1.ogg"
+        },
+        {
+          "label": "sniff 2",
+          "action": "sniff",
+          "n": 2,
+          "path": "assets/sounds/warden_sniff_2.ogg"
+        },
+        {
+          "label": "sniff 3",
+          "action": "sniff",
+          "n": 3,
+          "path": "assets/sounds/warden_sniff_3.ogg"
+        },
+        {
+          "label": "sniff 4",
+          "action": "sniff",
+          "n": 4,
+          "path": "assets/sounds/warden_sniff_4.ogg"
+        },
+        {
+          "label": "sonic boom 1",
+          "action": "sonic boom",
+          "n": 1,
+          "path": "assets/sounds/warden_sonic_boom1.ogg"
+        },
+        {
+          "label": "sonic boom 2",
+          "action": "sonic boom",
+          "n": 2,
+          "path": "assets/sounds/warden_sonic_boom2.ogg"
+        },
+        {
+          "label": "sonic boom 3",
+          "action": "sonic boom",
+          "n": 3,
+          "path": "assets/sounds/warden_sonic_boom3.ogg"
+        },
+        {
+          "label": "sonic boom 4",
+          "action": "sonic boom",
+          "n": 4,
+          "path": "assets/sounds/warden_sonic_boom4.ogg"
+        },
+        {
+          "label": "sonic charge 1",
+          "action": "sonic charge",
+          "n": 1,
+          "path": "assets/sounds/warden_sonic_charge1.ogg"
+        },
+        {
+          "label": "sonic charge 2",
+          "action": "sonic charge",
+          "n": 2,
+          "path": "assets/sounds/warden_sonic_charge2.ogg"
+        },
+        {
+          "label": "sonic charge 3",
+          "action": "sonic charge",
+          "n": 3,
+          "path": "assets/sounds/warden_sonic_charge3.ogg"
+        },
+        {
+          "label": "sonic charge 4",
+          "action": "sonic charge",
+          "n": 4,
+          "path": "assets/sounds/warden_sonic_charge4.ogg"
+        },
+        {
+          "label": "step 1",
+          "action": "step",
+          "n": 1,
+          "path": "assets/sounds/warden_step_1.ogg"
+        },
+        {
+          "label": "step 2",
+          "action": "step",
+          "n": 2,
+          "path": "assets/sounds/warden_step_2.ogg"
+        },
+        {
+          "label": "step 3",
+          "action": "step",
+          "n": 3,
+          "path": "assets/sounds/warden_step_3.ogg"
+        },
+        {
+          "label": "step 4",
+          "action": "step",
+          "n": 4,
+          "path": "assets/sounds/warden_step_4.ogg"
+        },
+        {
+          "label": "tendril clicks 1",
+          "action": "tendril clicks",
+          "n": 1,
+          "path": "assets/sounds/warden_tendril_clicks_1.ogg"
+        },
+        {
+          "label": "tendril clicks 2",
+          "action": "tendril clicks",
+          "n": 2,
+          "path": "assets/sounds/warden_tendril_clicks_2.ogg"
+        },
+        {
+          "label": "tendril clicks 3",
+          "action": "tendril clicks",
+          "n": 3,
+          "path": "assets/sounds/warden_tendril_clicks_3.ogg"
+        },
+        {
+          "label": "tendril clicks 4",
+          "action": "tendril clicks",
+          "n": 4,
+          "path": "assets/sounds/warden_tendril_clicks_4.ogg"
+        },
+        {
+          "label": "tendril clicks 5",
+          "action": "tendril clicks",
+          "n": 5,
+          "path": "assets/sounds/warden_tendril_clicks_5.ogg"
+        },
+        {
+          "label": "tendril clicks 6",
+          "action": "tendril clicks",
+          "n": 6,
+          "path": "assets/sounds/warden_tendril_clicks_6.ogg"
+        }
+      ],
+      "sound": "assets/sounds/warden_agitated_1.ogg",
+      "texture": "assets/textures/warden.png",
+      "render": "assets/renders/warden.png",
+      "color": "#1a3a4a"
+    },
+    {
+      "name": "Drowned",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/drowned_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/drowned_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/drowned_say3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/drowned_say1.ogg",
+      "texture": "assets/textures/drowned.png",
+      "render": "assets/renders/drowned.png",
+      "color": "#2a5a5a"
+    },
+    {
+      "name": "Cow",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/cow_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/cow_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/cow_say3.ogg"
+        },
+        {
+          "label": "say 4",
+          "action": "say",
+          "n": 4,
+          "path": "assets/sounds/cow_say4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/cow_say1.ogg",
+      "texture": "assets/textures/cow.png",
+      "render": "assets/renders/cow.png",
+      "color": "#8b5a3c"
+    },
+    {
+      "name": "Pig",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/pig_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/pig_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/pig_say3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/pig_say1.ogg",
+      "texture": "assets/textures/pig.png",
+      "render": "assets/renders/pig.png",
+      "color": "#f4a8a8"
+    },
+    {
+      "name": "Chicken",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/chicken_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/chicken_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/chicken_say3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/chicken_say1.ogg",
+      "texture": "assets/textures/chicken.png",
+      "render": "assets/renders/chicken.png",
+      "color": "#fff5b8"
+    },
+    {
+      "name": "Sheep",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/sheep_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/sheep_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/sheep_say3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/sheep_say1.ogg",
+      "texture": "assets/textures/sheep.png",
+      "render": "assets/renders/sheep.png",
+      "color": "#e8e8e8"
+    },
+    {
+      "name": "Villager",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/villager_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/villager_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/villager_idle3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/villager_idle1.ogg",
+      "texture": "assets/textures/villager.png",
+      "render": "assets/renders/villager.png",
+      "color": "#a07050"
+    },
+    {
+      "name": "Wolf",
+      "type": "neutral",
+      "sounds": [
+        {
+          "label": "bark 1",
+          "action": "bark",
+          "n": 1,
+          "path": "assets/sounds/wolf_bark1.ogg"
+        },
+        {
+          "label": "bark 2",
+          "action": "bark",
+          "n": 2,
+          "path": "assets/sounds/wolf_bark2.ogg"
+        },
+        {
+          "label": "bark 3",
+          "action": "bark",
+          "n": 3,
+          "path": "assets/sounds/wolf_bark3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/wolf_bark1.ogg",
+      "texture": "assets/textures/wolf.png",
+      "render": "assets/renders/wolf.png",
+      "color": "#909090"
+    },
+    {
+      "name": "Cat",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "beg 1",
+          "action": "beg",
+          "n": 1,
+          "path": "assets/sounds/cat_beg1.ogg"
+        },
+        {
+          "label": "beg 2",
+          "action": "beg",
+          "n": 2,
+          "path": "assets/sounds/cat_beg2.ogg"
+        },
+        {
+          "label": "beg 3",
+          "action": "beg",
+          "n": 3,
+          "path": "assets/sounds/cat_beg3.ogg"
+        },
+        {
+          "label": "meow 1",
+          "action": "meow",
+          "n": 1,
+          "path": "assets/sounds/cat_meow1.ogg"
+        },
+        {
+          "label": "meow 2",
+          "action": "meow",
+          "n": 2,
+          "path": "assets/sounds/cat_meow2.ogg"
+        },
+        {
+          "label": "meow 3",
+          "action": "meow",
+          "n": 3,
+          "path": "assets/sounds/cat_meow3.ogg"
+        },
+        {
+          "label": "meow 4",
+          "action": "meow",
+          "n": 4,
+          "path": "assets/sounds/cat_meow4.ogg"
+        },
+        {
+          "label": "purr 1",
+          "action": "purr",
+          "n": 1,
+          "path": "assets/sounds/cat_purr1.ogg"
+        },
+        {
+          "label": "purr 2",
+          "action": "purr",
+          "n": 2,
+          "path": "assets/sounds/cat_purr2.ogg"
+        },
+        {
+          "label": "purr 3",
+          "action": "purr",
+          "n": 3,
+          "path": "assets/sounds/cat_purr3.ogg"
+        },
+        {
+          "label": "purreow 1",
+          "action": "purreow",
+          "n": 1,
+          "path": "assets/sounds/cat_purreow1.ogg"
+        },
+        {
+          "label": "purreow 2",
+          "action": "purreow",
+          "n": 2,
+          "path": "assets/sounds/cat_purreow2.ogg"
+        }
+      ],
+      "sound": "assets/sounds/cat_beg1.ogg",
+      "texture": "assets/textures/cat.png",
+      "render": "assets/renders/cat.png",
+      "color": "#3a3a3a"
+    },
+    {
+      "name": "Horse",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/horse_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/horse_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/horse_idle3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/horse_idle1.ogg",
+      "texture": "assets/textures/horse.png",
+      "render": "assets/renders/horse.png",
+      "color": "#a86a3a"
+    },
+    {
+      "name": "Bee",
+      "type": "neutral",
+      "sounds": [
+        {
+          "label": "aggressive 1",
+          "action": "aggressive",
+          "n": 1,
+          "path": "assets/sounds/bee_aggressive1.ogg"
+        },
+        {
+          "label": "aggressive 2",
+          "action": "aggressive",
+          "n": 2,
+          "path": "assets/sounds/bee_aggressive2.ogg"
+        },
+        {
+          "label": "aggressive 3",
+          "action": "aggressive",
+          "n": 3,
+          "path": "assets/sounds/bee_aggressive3.ogg"
+        },
+        {
+          "label": "loop 1",
+          "action": "loop",
+          "n": 1,
+          "path": "assets/sounds/bee_loop1.ogg"
+        },
+        {
+          "label": "loop 2",
+          "action": "loop",
+          "n": 2,
+          "path": "assets/sounds/bee_loop2.ogg"
+        },
+        {
+          "label": "loop 3",
+          "action": "loop",
+          "n": 3,
+          "path": "assets/sounds/bee_loop3.ogg"
+        },
+        {
+          "label": "loop 4",
+          "action": "loop",
+          "n": 4,
+          "path": "assets/sounds/bee_loop4.ogg"
+        },
+        {
+          "label": "loop 5",
+          "action": "loop",
+          "n": 5,
+          "path": "assets/sounds/bee_loop5.ogg"
+        }
+      ],
+      "sound": "assets/sounds/bee_aggressive1.ogg",
+      "texture": "assets/textures/bee.png",
+      "render": "assets/renders/bee.png",
+      "color": "#f4c430"
+    },
+    {
+      "name": "Fox",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "aggro 1",
+          "action": "aggro",
+          "n": 1,
+          "path": "assets/sounds/fox_aggro1.ogg"
+        },
+        {
+          "label": "aggro 2",
+          "action": "aggro",
+          "n": 2,
+          "path": "assets/sounds/fox_aggro2.ogg"
+        },
+        {
+          "label": "aggro 3",
+          "action": "aggro",
+          "n": 3,
+          "path": "assets/sounds/fox_aggro3.ogg"
+        },
+        {
+          "label": "aggro 4",
+          "action": "aggro",
+          "n": 4,
+          "path": "assets/sounds/fox_aggro4.ogg"
+        },
+        {
+          "label": "aggro 5",
+          "action": "aggro",
+          "n": 5,
+          "path": "assets/sounds/fox_aggro5.ogg"
+        },
+        {
+          "label": "aggro 6",
+          "action": "aggro",
+          "n": 6,
+          "path": "assets/sounds/fox_aggro6.ogg"
+        },
+        {
+          "label": "aggro 7",
+          "action": "aggro",
+          "n": 7,
+          "path": "assets/sounds/fox_aggro7.ogg"
+        }
+      ],
+      "sound": "assets/sounds/fox_aggro1.ogg",
+      "texture": "assets/textures/fox.png",
+      "render": "assets/renders/fox.png",
+      "color": "#e88a3a"
+    },
+    {
+      "name": "Axolotl",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/axolotl_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/axolotl_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/axolotl_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/axolotl_idle4.ogg"
+        },
+        {
+          "label": "idle 5",
+          "action": "idle",
+          "n": 5,
+          "path": "assets/sounds/axolotl_idle5.ogg"
+        },
+        {
+          "label": "idle air 1",
+          "action": "idle air",
+          "n": 1,
+          "path": "assets/sounds/axolotl_idle_air1.ogg"
+        },
+        {
+          "label": "idle air 2",
+          "action": "idle air",
+          "n": 2,
+          "path": "assets/sounds/axolotl_idle_air2.ogg"
+        },
+        {
+          "label": "idle air 3",
+          "action": "idle air",
+          "n": 3,
+          "path": "assets/sounds/axolotl_idle_air3.ogg"
+        },
+        {
+          "label": "idle air 4",
+          "action": "idle air",
+          "n": 4,
+          "path": "assets/sounds/axolotl_idle_air4.ogg"
+        },
+        {
+          "label": "idle air 5",
+          "action": "idle air",
+          "n": 5,
+          "path": "assets/sounds/axolotl_idle_air5.ogg"
+        }
+      ],
+      "sound": "assets/sounds/axolotl_idle1.ogg",
+      "texture": "assets/textures/axolotl.png",
+      "render": "assets/renders/axolotl.png",
+      "color": "#f0a8c8"
+    },
+    {
+      "name": "Goat",
+      "type": "neutral",
+      "sounds": [
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/goat_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/goat_death2.ogg"
+        },
+        {
+          "label": "death 3",
+          "action": "death",
+          "n": 3,
+          "path": "assets/sounds/goat_death3.ogg"
+        },
+        {
+          "label": "death 4",
+          "action": "death",
+          "n": 4,
+          "path": "assets/sounds/goat_death4.ogg"
+        },
+        {
+          "label": "death 5",
+          "action": "death",
+          "n": 5,
+          "path": "assets/sounds/goat_death5.ogg"
+        },
+        {
+          "label": "eat 1",
+          "action": "eat",
+          "n": 1,
+          "path": "assets/sounds/goat_eat1.ogg"
+        },
+        {
+          "label": "eat 2",
+          "action": "eat",
+          "n": 2,
+          "path": "assets/sounds/goat_eat2.ogg"
+        },
+        {
+          "label": "eat 3",
+          "action": "eat",
+          "n": 3,
+          "path": "assets/sounds/goat_eat3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/goat_death1.ogg",
+      "texture": "assets/textures/goat.png",
+      "render": "assets/renders/goat.png",
+      "color": "#c0a890"
+    },
+    {
+      "name": "Allay",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "idle with item 1",
+          "action": "idle with item",
+          "n": 1,
+          "path": "assets/sounds/allay_idle_with_item1.ogg"
+        },
+        {
+          "label": "idle with item 2",
+          "action": "idle with item",
+          "n": 2,
+          "path": "assets/sounds/allay_idle_with_item2.ogg"
+        },
+        {
+          "label": "idle with item 3",
+          "action": "idle with item",
+          "n": 3,
+          "path": "assets/sounds/allay_idle_with_item3.ogg"
+        },
+        {
+          "label": "idle with item 4",
+          "action": "idle with item",
+          "n": 4,
+          "path": "assets/sounds/allay_idle_with_item4.ogg"
+        },
+        {
+          "label": "idle without item 1",
+          "action": "idle without item",
+          "n": 1,
+          "path": "assets/sounds/allay_idle_without_item1.ogg"
+        },
+        {
+          "label": "idle without item 2",
+          "action": "idle without item",
+          "n": 2,
+          "path": "assets/sounds/allay_idle_without_item2.ogg"
+        },
+        {
+          "label": "idle without item 3",
+          "action": "idle without item",
+          "n": 3,
+          "path": "assets/sounds/allay_idle_without_item3.ogg"
+        },
+        {
+          "label": "idle without item 4",
+          "action": "idle without item",
+          "n": 4,
+          "path": "assets/sounds/allay_idle_without_item4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/allay_idle_with_item1.ogg",
+      "texture": "assets/textures/allay.png",
+      "render": "assets/renders/allay.png",
+      "color": "#5acbe8"
+    },
+    {
+      "name": "Ender Dragon",
+      "type": "boss",
+      "sounds": [
+        {
+          "label": "growl 1",
+          "action": "growl",
+          "n": 1,
+          "path": "assets/sounds/ender_dragon_growl1.ogg"
+        },
+        {
+          "label": "growl 2",
+          "action": "growl",
+          "n": 2,
+          "path": "assets/sounds/ender_dragon_growl2.ogg"
+        },
+        {
+          "label": "growl 3",
+          "action": "growl",
+          "n": 3,
+          "path": "assets/sounds/ender_dragon_growl3.ogg"
+        },
+        {
+          "label": "growl 4",
+          "action": "growl",
+          "n": 4,
+          "path": "assets/sounds/ender_dragon_growl4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/ender_dragon_growl1.ogg",
+      "texture": "assets/textures/ender_dragon.png",
+      "render": "assets/renders/ender_dragon.png",
+      "color": "#3a1a4a"
+    },
+    {
+      "name": "Cave Spider",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/cave_spider_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/cave_spider_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/cave_spider_say3.ogg"
+        },
+        {
+          "label": "say 4",
+          "action": "say",
+          "n": 4,
+          "path": "assets/sounds/cave_spider_say4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/cave_spider_say1.ogg",
+      "texture": "assets/textures/cave_spider.png",
+      "render": "assets/renders/cave_spider.png",
+      "color": "#1a4a5a"
+    },
+    {
+      "name": "Vindicator",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/vindicator_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/vindicator_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/vindicator_say3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/vindicator_say1.ogg",
+      "texture": "assets/textures/vindicator.png",
+      "render": "assets/renders/vindicator.png",
+      "color": "#6a8a96"
+    },
+    {
+      "name": "Vex",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "charge 1",
+          "action": "charge",
+          "n": 1,
+          "path": "assets/sounds/vex_charge1.ogg"
+        },
+        {
+          "label": "charge 2",
+          "action": "charge",
+          "n": 2,
+          "path": "assets/sounds/vex_charge2.ogg"
+        },
+        {
+          "label": "charge 3",
+          "action": "charge",
+          "n": 3,
+          "path": "assets/sounds/vex_charge3.ogg"
+        },
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/vex_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/vex_death2.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/vex_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/vex_hurt2.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/vex_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/vex_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/vex_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/vex_idle4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/vex_charge1.ogg",
+      "texture": "assets/textures/vex.png",
+      "render": "assets/renders/vex.png",
+      "color": "#4a4a5a"
+    },
+    {
+      "name": "Silverfish",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/silverfish_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/silverfish_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/silverfish_say3.ogg"
+        },
+        {
+          "label": "say 4",
+          "action": "say",
+          "n": 4,
+          "path": "assets/sounds/silverfish_say4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/silverfish_say1.ogg",
+      "texture": "assets/textures/silverfish.png",
+      "render": "assets/renders/silverfish.png",
+      "color": "#4a4a4a"
+    },
+    {
+      "name": "Endermite",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/endermite_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/endermite_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/endermite_say3.ogg"
+        },
+        {
+          "label": "say 4",
+          "action": "say",
+          "n": 4,
+          "path": "assets/sounds/endermite_say4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/endermite_say1.ogg",
+      "texture": "assets/textures/endermite.png",
+      "render": "assets/renders/endermite.png",
+      "color": "#2a1a3a"
+    },
+    {
+      "name": "Elder Guardian",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "elder death",
+          "action": "elder death",
+          "n": 0,
+          "path": "assets/sounds/elder_guardian_elder_death.ogg"
+        },
+        {
+          "label": "elder hit 1",
+          "action": "elder hit",
+          "n": 1,
+          "path": "assets/sounds/elder_guardian_elder_hit1.ogg"
+        },
+        {
+          "label": "elder hit 2",
+          "action": "elder hit",
+          "n": 2,
+          "path": "assets/sounds/elder_guardian_elder_hit2.ogg"
+        },
+        {
+          "label": "elder hit 3",
+          "action": "elder hit",
+          "n": 3,
+          "path": "assets/sounds/elder_guardian_elder_hit3.ogg"
+        },
+        {
+          "label": "elder hit 4",
+          "action": "elder hit",
+          "n": 4,
+          "path": "assets/sounds/elder_guardian_elder_hit4.ogg"
+        },
+        {
+          "label": "elder idle 1",
+          "action": "elder idle",
+          "n": 1,
+          "path": "assets/sounds/elder_guardian_elder_idle1.ogg"
+        },
+        {
+          "label": "elder idle 2",
+          "action": "elder idle",
+          "n": 2,
+          "path": "assets/sounds/elder_guardian_elder_idle2.ogg"
+        },
+        {
+          "label": "elder idle 3",
+          "action": "elder idle",
+          "n": 3,
+          "path": "assets/sounds/elder_guardian_elder_idle3.ogg"
+        },
+        {
+          "label": "elder idle 4",
+          "action": "elder idle",
+          "n": 4,
+          "path": "assets/sounds/elder_guardian_elder_idle4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/elder_guardian_elder_death.ogg",
+      "texture": "assets/textures/elder_guardian.png",
+      "render": "assets/renders/elder_guardian.png",
+      "color": "#7a8a5a"
+    },
+    {
+      "name": "Hoglin",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "angry 1",
+          "action": "angry",
+          "n": 1,
+          "path": "assets/sounds/hoglin_angry1.ogg"
+        },
+        {
+          "label": "angry 2",
+          "action": "angry",
+          "n": 2,
+          "path": "assets/sounds/hoglin_angry2.ogg"
+        },
+        {
+          "label": "angry 3",
+          "action": "angry",
+          "n": 3,
+          "path": "assets/sounds/hoglin_angry3.ogg"
+        },
+        {
+          "label": "angry 4",
+          "action": "angry",
+          "n": 4,
+          "path": "assets/sounds/hoglin_angry4.ogg"
+        },
+        {
+          "label": "angry 5",
+          "action": "angry",
+          "n": 5,
+          "path": "assets/sounds/hoglin_angry5.ogg"
+        },
+        {
+          "label": "angry 6",
+          "action": "angry",
+          "n": 6,
+          "path": "assets/sounds/hoglin_angry6.ogg"
+        },
+        {
+          "label": "attack 1",
+          "action": "attack",
+          "n": 1,
+          "path": "assets/sounds/hoglin_attack1.ogg"
+        },
+        {
+          "label": "attack 2",
+          "action": "attack",
+          "n": 2,
+          "path": "assets/sounds/hoglin_attack2.ogg"
+        },
+        {
+          "label": "converted 1",
+          "action": "converted",
+          "n": 1,
+          "path": "assets/sounds/hoglin_converted1.ogg"
+        },
+        {
+          "label": "converted 2",
+          "action": "converted",
+          "n": 2,
+          "path": "assets/sounds/hoglin_converted2.ogg"
+        },
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/hoglin_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/hoglin_death2.ogg"
+        },
+        {
+          "label": "death 3",
+          "action": "death",
+          "n": 3,
+          "path": "assets/sounds/hoglin_death3.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/hoglin_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/hoglin_hurt2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/hoglin_hurt3.ogg"
+        },
+        {
+          "label": "hurt 4",
+          "action": "hurt",
+          "n": 4,
+          "path": "assets/sounds/hoglin_hurt4.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/hoglin_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/hoglin_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/hoglin_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/hoglin_idle4.ogg"
+        },
+        {
+          "label": "idle 5",
+          "action": "idle",
+          "n": 5,
+          "path": "assets/sounds/hoglin_idle5.ogg"
+        },
+        {
+          "label": "idle 6",
+          "action": "idle",
+          "n": 6,
+          "path": "assets/sounds/hoglin_idle6.ogg"
+        },
+        {
+          "label": "idle 7",
+          "action": "idle",
+          "n": 7,
+          "path": "assets/sounds/hoglin_idle7.ogg"
+        },
+        {
+          "label": "idle 8",
+          "action": "idle",
+          "n": 8,
+          "path": "assets/sounds/hoglin_idle8.ogg"
+        },
+        {
+          "label": "idle 9",
+          "action": "idle",
+          "n": 9,
+          "path": "assets/sounds/hoglin_idle9.ogg"
+        },
+        {
+          "label": "idle 10",
+          "action": "idle",
+          "n": 10,
+          "path": "assets/sounds/hoglin_idle10.ogg"
+        },
+        {
+          "label": "idle 11",
+          "action": "idle",
+          "n": 11,
+          "path": "assets/sounds/hoglin_idle11.ogg"
+        },
+        {
+          "label": "retreat 1",
+          "action": "retreat",
+          "n": 1,
+          "path": "assets/sounds/hoglin_retreat1.ogg"
+        },
+        {
+          "label": "retreat 2",
+          "action": "retreat",
+          "n": 2,
+          "path": "assets/sounds/hoglin_retreat2.ogg"
+        },
+        {
+          "label": "retreat 3",
+          "action": "retreat",
+          "n": 3,
+          "path": "assets/sounds/hoglin_retreat3.ogg"
+        },
+        {
+          "label": "step 1",
+          "action": "step",
+          "n": 1,
+          "path": "assets/sounds/hoglin_step1.ogg"
+        },
+        {
+          "label": "step 2",
+          "action": "step",
+          "n": 2,
+          "path": "assets/sounds/hoglin_step2.ogg"
+        },
+        {
+          "label": "step 3",
+          "action": "step",
+          "n": 3,
+          "path": "assets/sounds/hoglin_step3.ogg"
+        },
+        {
+          "label": "step 4",
+          "action": "step",
+          "n": 4,
+          "path": "assets/sounds/hoglin_step4.ogg"
+        },
+        {
+          "label": "step 5",
+          "action": "step",
+          "n": 5,
+          "path": "assets/sounds/hoglin_step5.ogg"
+        },
+        {
+          "label": "step 6",
+          "action": "step",
+          "n": 6,
+          "path": "assets/sounds/hoglin_step6.ogg"
+        }
+      ],
+      "sound": "assets/sounds/hoglin_angry1.ogg",
+      "texture": "assets/textures/hoglin.png",
+      "render": "assets/renders/hoglin.png",
+      "color": "#a04a5a"
+    },
+    {
+      "name": "Zoglin",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "angry 1",
+          "action": "angry",
+          "n": 1,
+          "path": "assets/sounds/zoglin_angry1.ogg"
+        },
+        {
+          "label": "angry 2",
+          "action": "angry",
+          "n": 2,
+          "path": "assets/sounds/zoglin_angry2.ogg"
+        },
+        {
+          "label": "angry 3",
+          "action": "angry",
+          "n": 3,
+          "path": "assets/sounds/zoglin_angry3.ogg"
+        },
+        {
+          "label": "attack 1",
+          "action": "attack",
+          "n": 1,
+          "path": "assets/sounds/zoglin_attack1.ogg"
+        },
+        {
+          "label": "attack 2",
+          "action": "attack",
+          "n": 2,
+          "path": "assets/sounds/zoglin_attack2.ogg"
+        },
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/zoglin_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/zoglin_death2.ogg"
+        },
+        {
+          "label": "death 3",
+          "action": "death",
+          "n": 3,
+          "path": "assets/sounds/zoglin_death3.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/zoglin_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/zoglin_hurt2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/zoglin_hurt3.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/zoglin_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/zoglin_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/zoglin_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/zoglin_idle4.ogg"
+        },
+        {
+          "label": "idle 5",
+          "action": "idle",
+          "n": 5,
+          "path": "assets/sounds/zoglin_idle5.ogg"
+        },
+        {
+          "label": "idle 6",
+          "action": "idle",
+          "n": 6,
+          "path": "assets/sounds/zoglin_idle6.ogg"
+        },
+        {
+          "label": "step 1",
+          "action": "step",
+          "n": 1,
+          "path": "assets/sounds/zoglin_step1.ogg"
+        },
+        {
+          "label": "step 2",
+          "action": "step",
+          "n": 2,
+          "path": "assets/sounds/zoglin_step2.ogg"
+        },
+        {
+          "label": "step 3",
+          "action": "step",
+          "n": 3,
+          "path": "assets/sounds/zoglin_step3.ogg"
+        },
+        {
+          "label": "step 4",
+          "action": "step",
+          "n": 4,
+          "path": "assets/sounds/zoglin_step4.ogg"
+        },
+        {
+          "label": "step 5",
+          "action": "step",
+          "n": 5,
+          "path": "assets/sounds/zoglin_step5.ogg"
+        }
+      ],
+      "sound": "assets/sounds/zoglin_angry1.ogg",
+      "texture": "assets/textures/zoglin.png",
+      "render": "assets/renders/zoglin.png",
+      "color": "#6a4a5a"
+    },
+    {
+      "name": "Piglin Brute",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "angry 1",
+          "action": "angry",
+          "n": 1,
+          "path": "assets/sounds/piglin_brute_angry1.ogg"
+        },
+        {
+          "label": "angry 2",
+          "action": "angry",
+          "n": 2,
+          "path": "assets/sounds/piglin_brute_angry2.ogg"
+        },
+        {
+          "label": "angry 3",
+          "action": "angry",
+          "n": 3,
+          "path": "assets/sounds/piglin_brute_angry3.ogg"
+        },
+        {
+          "label": "angry 4",
+          "action": "angry",
+          "n": 4,
+          "path": "assets/sounds/piglin_brute_angry4.ogg"
+        },
+        {
+          "label": "angry 5",
+          "action": "angry",
+          "n": 5,
+          "path": "assets/sounds/piglin_brute_angry5.ogg"
+        },
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/piglin_brute_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/piglin_brute_death2.ogg"
+        },
+        {
+          "label": "death 3",
+          "action": "death",
+          "n": 3,
+          "path": "assets/sounds/piglin_brute_death3.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/piglin_brute_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/piglin_brute_hurt2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/piglin_brute_hurt3.ogg"
+        },
+        {
+          "label": "hurt 4",
+          "action": "hurt",
+          "n": 4,
+          "path": "assets/sounds/piglin_brute_hurt4.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/piglin_brute_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/piglin_brute_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/piglin_brute_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/piglin_brute_idle4.ogg"
+        },
+        {
+          "label": "idle 5",
+          "action": "idle",
+          "n": 5,
+          "path": "assets/sounds/piglin_brute_idle5.ogg"
+        },
+        {
+          "label": "idle 6",
+          "action": "idle",
+          "n": 6,
+          "path": "assets/sounds/piglin_brute_idle6.ogg"
+        },
+        {
+          "label": "idle 7",
+          "action": "idle",
+          "n": 7,
+          "path": "assets/sounds/piglin_brute_idle7.ogg"
+        },
+        {
+          "label": "idle 8",
+          "action": "idle",
+          "n": 8,
+          "path": "assets/sounds/piglin_brute_idle8.ogg"
+        },
+        {
+          "label": "idle 9",
+          "action": "idle",
+          "n": 9,
+          "path": "assets/sounds/piglin_brute_idle9.ogg"
+        },
+        {
+          "label": "step 1",
+          "action": "step",
+          "n": 1,
+          "path": "assets/sounds/piglin_brute_step1.ogg"
+        },
+        {
+          "label": "step 2",
+          "action": "step",
+          "n": 2,
+          "path": "assets/sounds/piglin_brute_step2.ogg"
+        },
+        {
+          "label": "step 3",
+          "action": "step",
+          "n": 3,
+          "path": "assets/sounds/piglin_brute_step3.ogg"
+        },
+        {
+          "label": "step 4",
+          "action": "step",
+          "n": 4,
+          "path": "assets/sounds/piglin_brute_step4.ogg"
+        },
+        {
+          "label": "step 5",
+          "action": "step",
+          "n": 5,
+          "path": "assets/sounds/piglin_brute_step5.ogg"
+        }
+      ],
+      "sound": "assets/sounds/piglin_brute_angry1.ogg",
+      "texture": "assets/textures/piglin_brute.png",
+      "render": "assets/renders/piglin_brute.png",
+      "color": "#c08a5a"
+    },
+    {
+      "name": "Zombified Piglin",
+      "type": "neutral",
+      "sounds": [
+        {
+          "label": "zpig 1",
+          "action": "zpig",
+          "n": 1,
+          "path": "assets/sounds/zombified_piglin_zpig1.ogg"
+        },
+        {
+          "label": "zpig 2",
+          "action": "zpig",
+          "n": 2,
+          "path": "assets/sounds/zombified_piglin_zpig2.ogg"
+        },
+        {
+          "label": "zpig 3",
+          "action": "zpig",
+          "n": 3,
+          "path": "assets/sounds/zombified_piglin_zpig3.ogg"
+        },
+        {
+          "label": "zpig 4",
+          "action": "zpig",
+          "n": 4,
+          "path": "assets/sounds/zombified_piglin_zpig4.ogg"
+        },
+        {
+          "label": "zpigangry 1",
+          "action": "zpigangry",
+          "n": 1,
+          "path": "assets/sounds/zombified_piglin_zpigangry1.ogg"
+        },
+        {
+          "label": "zpigangry 2",
+          "action": "zpigangry",
+          "n": 2,
+          "path": "assets/sounds/zombified_piglin_zpigangry2.ogg"
+        },
+        {
+          "label": "zpigangry 3",
+          "action": "zpigangry",
+          "n": 3,
+          "path": "assets/sounds/zombified_piglin_zpigangry3.ogg"
+        },
+        {
+          "label": "zpigangry 4",
+          "action": "zpigangry",
+          "n": 4,
+          "path": "assets/sounds/zombified_piglin_zpigangry4.ogg"
+        },
+        {
+          "label": "zpigdeath",
+          "action": "zpigdeath",
+          "n": 0,
+          "path": "assets/sounds/zombified_piglin_zpigdeath.ogg"
+        },
+        {
+          "label": "zpighurt 1",
+          "action": "zpighurt",
+          "n": 1,
+          "path": "assets/sounds/zombified_piglin_zpighurt1.ogg"
+        },
+        {
+          "label": "zpighurt 2",
+          "action": "zpighurt",
+          "n": 2,
+          "path": "assets/sounds/zombified_piglin_zpighurt2.ogg"
+        }
+      ],
+      "sound": "assets/sounds/zombified_piglin_zpig1.ogg",
+      "texture": "assets/textures/zombified_piglin.png",
+      "render": "assets/renders/zombified_piglin.png",
+      "color": "#6a8a5a"
+    },
+    {
+      "name": "Husk",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "convert 1",
+          "action": "convert",
+          "n": 1,
+          "path": "assets/sounds/husk_convert1.ogg"
+        },
+        {
+          "label": "convert 2",
+          "action": "convert",
+          "n": 2,
+          "path": "assets/sounds/husk_convert2.ogg"
+        },
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/husk_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/husk_death2.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/husk_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/husk_hurt2.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/husk_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/husk_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/husk_idle3.ogg"
+        },
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/husk_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/husk_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/husk_say3.ogg"
+        },
+        {
+          "label": "step 1",
+          "action": "step",
+          "n": 1,
+          "path": "assets/sounds/husk_step1.ogg"
+        },
+        {
+          "label": "step 2",
+          "action": "step",
+          "n": 2,
+          "path": "assets/sounds/husk_step2.ogg"
+        },
+        {
+          "label": "step 3",
+          "action": "step",
+          "n": 3,
+          "path": "assets/sounds/husk_step3.ogg"
+        },
+        {
+          "label": "step 4",
+          "action": "step",
+          "n": 4,
+          "path": "assets/sounds/husk_step4.ogg"
+        },
+        {
+          "label": "step 5",
+          "action": "step",
+          "n": 5,
+          "path": "assets/sounds/husk_step5.ogg"
+        }
+      ],
+      "sound": "assets/sounds/husk_convert1.ogg",
+      "texture": "assets/textures/husk.png",
+      "render": "assets/renders/husk.png",
+      "color": "#c8b078"
+    },
+    {
+      "name": "Stray",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "convert 1",
+          "action": "convert",
+          "n": 1,
+          "path": "assets/sounds/stray_convert1.ogg"
+        },
+        {
+          "label": "convert 2",
+          "action": "convert",
+          "n": 2,
+          "path": "assets/sounds/stray_convert2.ogg"
+        },
+        {
+          "label": "convert 3",
+          "action": "convert",
+          "n": 3,
+          "path": "assets/sounds/stray_convert3.ogg"
+        },
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/stray_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/stray_death2.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/stray_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/stray_hurt2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/stray_hurt3.ogg"
+        },
+        {
+          "label": "hurt 4",
+          "action": "hurt",
+          "n": 4,
+          "path": "assets/sounds/stray_hurt4.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/stray_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/stray_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/stray_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/stray_idle4.ogg"
+        },
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/stray_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/stray_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/stray_say3.ogg"
+        },
+        {
+          "label": "step 1",
+          "action": "step",
+          "n": 1,
+          "path": "assets/sounds/stray_step1.ogg"
+        },
+        {
+          "label": "step 2",
+          "action": "step",
+          "n": 2,
+          "path": "assets/sounds/stray_step2.ogg"
+        },
+        {
+          "label": "step 3",
+          "action": "step",
+          "n": 3,
+          "path": "assets/sounds/stray_step3.ogg"
+        },
+        {
+          "label": "step 4",
+          "action": "step",
+          "n": 4,
+          "path": "assets/sounds/stray_step4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/stray_convert1.ogg",
+      "texture": "assets/textures/stray.png",
+      "render": "assets/renders/stray.png",
+      "color": "#a8c8d8"
+    },
+    {
+      "name": "Zombie Villager",
+      "type": "hostile",
+      "sounds": [
+        {
+          "label": "death",
+          "action": "death",
+          "n": 0,
+          "path": "assets/sounds/zombie_villager_death.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/zombie_villager_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/zombie_villager_hurt2.ogg"
+        },
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/zombie_villager_say1.ogg"
+        },
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/zombie_villager_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/zombie_villager_say2.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/zombie_villager_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/zombie_villager_say3.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/zombie_villager_say3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/zombie_villager_death.ogg",
+      "texture": "assets/textures/zombie_villager.png",
+      "render": "assets/renders/zombie_villager.png",
+      "color": "#5a7a4a"
+    },
+    {
+      "name": "Iron Golem",
+      "type": "neutral",
+      "sounds": [
+        {
+          "label": "damage 1",
+          "action": "damage",
+          "n": 1,
+          "path": "assets/sounds/iron_golem_damage1.ogg"
+        },
+        {
+          "label": "damage 2",
+          "action": "damage",
+          "n": 2,
+          "path": "assets/sounds/iron_golem_damage2.ogg"
+        },
+        {
+          "label": "death",
+          "action": "death",
+          "n": 0,
+          "path": "assets/sounds/iron_golem_death.ogg"
+        },
+        {
+          "label": "hit 1",
+          "action": "hit",
+          "n": 1,
+          "path": "assets/sounds/iron_golem_hit1.ogg"
+        },
+        {
+          "label": "hit 2",
+          "action": "hit",
+          "n": 2,
+          "path": "assets/sounds/iron_golem_hit2.ogg"
+        },
+        {
+          "label": "hit 3",
+          "action": "hit",
+          "n": 3,
+          "path": "assets/sounds/iron_golem_hit3.ogg"
+        },
+        {
+          "label": "hit 4",
+          "action": "hit",
+          "n": 4,
+          "path": "assets/sounds/iron_golem_hit4.ogg"
+        },
+        {
+          "label": "repair",
+          "action": "repair",
+          "n": 0,
+          "path": "assets/sounds/iron_golem_repair.ogg"
+        },
+        {
+          "label": "throw",
+          "action": "throw",
+          "n": 0,
+          "path": "assets/sounds/iron_golem_throw.ogg"
+        },
+        {
+          "label": "walk 1",
+          "action": "walk",
+          "n": 1,
+          "path": "assets/sounds/iron_golem_walk1.ogg"
+        },
+        {
+          "label": "walk 2",
+          "action": "walk",
+          "n": 2,
+          "path": "assets/sounds/iron_golem_walk2.ogg"
+        },
+        {
+          "label": "walk 3",
+          "action": "walk",
+          "n": 3,
+          "path": "assets/sounds/iron_golem_walk3.ogg"
+        },
+        {
+          "label": "walk 4",
+          "action": "walk",
+          "n": 4,
+          "path": "assets/sounds/iron_golem_walk4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/iron_golem_damage1.ogg",
+      "texture": "assets/textures/iron_golem.png",
+      "render": "assets/renders/iron_golem.png",
+      "color": "#a8a098"
+    },
+    {
+      "name": "Snow Golem",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/snow_golem_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/snow_golem_death2.ogg"
+        },
+        {
+          "label": "death 3",
+          "action": "death",
+          "n": 3,
+          "path": "assets/sounds/snow_golem_death3.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/snow_golem_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/snow_golem_hurt2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/snow_golem_hurt3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/snow_golem_death1.ogg",
+      "texture": "assets/textures/snow_golem.png",
+      "render": "assets/renders/snow_golem.png",
+      "color": "#f0f5ff"
+    },
+    {
+      "name": "Llama",
+      "type": "neutral",
+      "sounds": [
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/llama_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/llama_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/llama_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/llama_idle4.ogg"
+        },
+        {
+          "label": "idle 5",
+          "action": "idle",
+          "n": 5,
+          "path": "assets/sounds/llama_idle5.ogg"
+        }
+      ],
+      "sound": "assets/sounds/llama_idle1.ogg",
+      "texture": "assets/textures/llama.png",
+      "render": "assets/renders/llama.png",
+      "color": "#d8b888"
+    },
+    {
+      "name": "Panda",
+      "type": "neutral",
+      "sounds": [
+        {
+          "label": "aggressive 1",
+          "action": "aggressive",
+          "n": 1,
+          "path": "assets/sounds/panda_aggressive1.ogg"
+        },
+        {
+          "label": "aggressive 2",
+          "action": "aggressive",
+          "n": 2,
+          "path": "assets/sounds/panda_aggressive2.ogg"
+        },
+        {
+          "label": "aggressive 3",
+          "action": "aggressive",
+          "n": 3,
+          "path": "assets/sounds/panda_aggressive3.ogg"
+        },
+        {
+          "label": "aggressive 4",
+          "action": "aggressive",
+          "n": 4,
+          "path": "assets/sounds/panda_aggressive4.ogg"
+        },
+        {
+          "label": "bite 1",
+          "action": "bite",
+          "n": 1,
+          "path": "assets/sounds/panda_bite1.ogg"
+        },
+        {
+          "label": "bite 2",
+          "action": "bite",
+          "n": 2,
+          "path": "assets/sounds/panda_bite2.ogg"
+        },
+        {
+          "label": "bite 3",
+          "action": "bite",
+          "n": 3,
+          "path": "assets/sounds/panda_bite3.ogg"
+        },
+        {
+          "label": "cant breed 1",
+          "action": "cant breed",
+          "n": 1,
+          "path": "assets/sounds/panda_cant_breed1.ogg"
+        },
+        {
+          "label": "cant breed 2",
+          "action": "cant breed",
+          "n": 2,
+          "path": "assets/sounds/panda_cant_breed2.ogg"
+        },
+        {
+          "label": "cant breed 3",
+          "action": "cant breed",
+          "n": 3,
+          "path": "assets/sounds/panda_cant_breed3.ogg"
+        },
+        {
+          "label": "cant breed 4",
+          "action": "cant breed",
+          "n": 4,
+          "path": "assets/sounds/panda_cant_breed4.ogg"
+        },
+        {
+          "label": "cant breed 5",
+          "action": "cant breed",
+          "n": 5,
+          "path": "assets/sounds/panda_cant_breed5.ogg"
+        },
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/panda_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/panda_death2.ogg"
+        },
+        {
+          "label": "death 3",
+          "action": "death",
+          "n": 3,
+          "path": "assets/sounds/panda_death3.ogg"
+        },
+        {
+          "label": "death 4",
+          "action": "death",
+          "n": 4,
+          "path": "assets/sounds/panda_death4.ogg"
+        },
+        {
+          "label": "eat 1",
+          "action": "eat",
+          "n": 1,
+          "path": "assets/sounds/panda_eat1.ogg"
+        },
+        {
+          "label": "eat 2",
+          "action": "eat",
+          "n": 2,
+          "path": "assets/sounds/panda_eat2.ogg"
+        },
+        {
+          "label": "eat 3",
+          "action": "eat",
+          "n": 3,
+          "path": "assets/sounds/panda_eat3.ogg"
+        },
+        {
+          "label": "eat 4",
+          "action": "eat",
+          "n": 4,
+          "path": "assets/sounds/panda_eat4.ogg"
+        },
+        {
+          "label": "eat 5",
+          "action": "eat",
+          "n": 5,
+          "path": "assets/sounds/panda_eat5.ogg"
+        },
+        {
+          "label": "eat 6",
+          "action": "eat",
+          "n": 6,
+          "path": "assets/sounds/panda_eat6.ogg"
+        },
+        {
+          "label": "eat 7",
+          "action": "eat",
+          "n": 7,
+          "path": "assets/sounds/panda_eat7.ogg"
+        },
+        {
+          "label": "eat 8",
+          "action": "eat",
+          "n": 8,
+          "path": "assets/sounds/panda_eat8.ogg"
+        },
+        {
+          "label": "eat 9",
+          "action": "eat",
+          "n": 9,
+          "path": "assets/sounds/panda_eat9.ogg"
+        },
+        {
+          "label": "eat 10",
+          "action": "eat",
+          "n": 10,
+          "path": "assets/sounds/panda_eat10.ogg"
+        },
+        {
+          "label": "eat 11",
+          "action": "eat",
+          "n": 11,
+          "path": "assets/sounds/panda_eat11.ogg"
+        },
+        {
+          "label": "eat 12",
+          "action": "eat",
+          "n": 12,
+          "path": "assets/sounds/panda_eat12.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/panda_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/panda_hurt2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/panda_hurt3.ogg"
+        },
+        {
+          "label": "hurt 4",
+          "action": "hurt",
+          "n": 4,
+          "path": "assets/sounds/panda_hurt4.ogg"
+        },
+        {
+          "label": "hurt 5",
+          "action": "hurt",
+          "n": 5,
+          "path": "assets/sounds/panda_hurt5.ogg"
+        },
+        {
+          "label": "hurt 6",
+          "action": "hurt",
+          "n": 6,
+          "path": "assets/sounds/panda_hurt6.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/panda_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/panda_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/panda_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/panda_idle4.ogg"
+        },
+        {
+          "label": "nosebreath 1",
+          "action": "nosebreath",
+          "n": 1,
+          "path": "assets/sounds/panda_nosebreath1.ogg"
+        },
+        {
+          "label": "nosebreath 2",
+          "action": "nosebreath",
+          "n": 2,
+          "path": "assets/sounds/panda_nosebreath2.ogg"
+        },
+        {
+          "label": "nosebreath 3",
+          "action": "nosebreath",
+          "n": 3,
+          "path": "assets/sounds/panda_nosebreath3.ogg"
+        },
+        {
+          "label": "pant 1",
+          "action": "pant",
+          "n": 1,
+          "path": "assets/sounds/panda_pant1.ogg"
+        },
+        {
+          "label": "pant 2",
+          "action": "pant",
+          "n": 2,
+          "path": "assets/sounds/panda_pant2.ogg"
+        },
+        {
+          "label": "pre sneeze",
+          "action": "pre sneeze",
+          "n": 0,
+          "path": "assets/sounds/panda_pre_sneeze.ogg"
+        },
+        {
+          "label": "sneeze 1",
+          "action": "sneeze",
+          "n": 1,
+          "path": "assets/sounds/panda_sneeze1.ogg"
+        },
+        {
+          "label": "sneeze 2",
+          "action": "sneeze",
+          "n": 2,
+          "path": "assets/sounds/panda_sneeze2.ogg"
+        },
+        {
+          "label": "sneeze 3",
+          "action": "sneeze",
+          "n": 3,
+          "path": "assets/sounds/panda_sneeze3.ogg"
+        },
+        {
+          "label": "step 1",
+          "action": "step",
+          "n": 1,
+          "path": "assets/sounds/panda_step1.ogg"
+        },
+        {
+          "label": "step 2",
+          "action": "step",
+          "n": 2,
+          "path": "assets/sounds/panda_step2.ogg"
+        },
+        {
+          "label": "step 3",
+          "action": "step",
+          "n": 3,
+          "path": "assets/sounds/panda_step3.ogg"
+        },
+        {
+          "label": "step 4",
+          "action": "step",
+          "n": 4,
+          "path": "assets/sounds/panda_step4.ogg"
+        },
+        {
+          "label": "step 5",
+          "action": "step",
+          "n": 5,
+          "path": "assets/sounds/panda_step5.ogg"
+        },
+        {
+          "label": "worried 1",
+          "action": "worried",
+          "n": 1,
+          "path": "assets/sounds/panda_worried1.ogg"
+        },
+        {
+          "label": "worried 2",
+          "action": "worried",
+          "n": 2,
+          "path": "assets/sounds/panda_worried2.ogg"
+        },
+        {
+          "label": "worried 3",
+          "action": "worried",
+          "n": 3,
+          "path": "assets/sounds/panda_worried3.ogg"
+        },
+        {
+          "label": "worried 4",
+          "action": "worried",
+          "n": 4,
+          "path": "assets/sounds/panda_worried4.ogg"
+        },
+        {
+          "label": "worried 5",
+          "action": "worried",
+          "n": 5,
+          "path": "assets/sounds/panda_worried5.ogg"
+        },
+        {
+          "label": "worried 6",
+          "action": "worried",
+          "n": 6,
+          "path": "assets/sounds/panda_worried6.ogg"
+        }
+      ],
+      "sound": "assets/sounds/panda_aggressive1.ogg",
+      "texture": "assets/textures/panda.png",
+      "render": "assets/renders/panda.png",
+      "color": "#e8e8e8"
+    },
+    {
+      "name": "Polar Bear",
+      "type": "neutral",
+      "sounds": [
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/polar_bear_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/polar_bear_death2.ogg"
+        },
+        {
+          "label": "death 3",
+          "action": "death",
+          "n": 3,
+          "path": "assets/sounds/polar_bear_death3.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/polar_bear_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/polar_bear_hurt2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/polar_bear_hurt3.ogg"
+        },
+        {
+          "label": "hurt 4",
+          "action": "hurt",
+          "n": 4,
+          "path": "assets/sounds/polar_bear_hurt4.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/polar_bear_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/polar_bear_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/polar_bear_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/polar_bear_idle4.ogg"
+        },
+        {
+          "label": "step 1",
+          "action": "step",
+          "n": 1,
+          "path": "assets/sounds/polar_bear_step1.ogg"
+        },
+        {
+          "label": "step 2",
+          "action": "step",
+          "n": 2,
+          "path": "assets/sounds/polar_bear_step2.ogg"
+        },
+        {
+          "label": "step 3",
+          "action": "step",
+          "n": 3,
+          "path": "assets/sounds/polar_bear_step3.ogg"
+        },
+        {
+          "label": "step 4",
+          "action": "step",
+          "n": 4,
+          "path": "assets/sounds/polar_bear_step4.ogg"
+        },
+        {
+          "label": "warning 1",
+          "action": "warning",
+          "n": 1,
+          "path": "assets/sounds/polar_bear_warning1.ogg"
+        },
+        {
+          "label": "warning 2",
+          "action": "warning",
+          "n": 2,
+          "path": "assets/sounds/polar_bear_warning2.ogg"
+        },
+        {
+          "label": "warning 3",
+          "action": "warning",
+          "n": 3,
+          "path": "assets/sounds/polar_bear_warning3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/polar_bear_death1.ogg",
+      "texture": "assets/textures/polar_bear.png",
+      "render": "assets/renders/polar_bear.png",
+      "color": "#f0e8d8"
+    },
+    {
+      "name": "Dolphin",
+      "type": "neutral",
+      "sounds": [
+        {
+          "label": "attack 1",
+          "action": "attack",
+          "n": 1,
+          "path": "assets/sounds/dolphin_attack1.ogg"
+        },
+        {
+          "label": "attack 2",
+          "action": "attack",
+          "n": 2,
+          "path": "assets/sounds/dolphin_attack2.ogg"
+        },
+        {
+          "label": "attack 3",
+          "action": "attack",
+          "n": 3,
+          "path": "assets/sounds/dolphin_attack3.ogg"
+        },
+        {
+          "label": "blowhole 1",
+          "action": "blowhole",
+          "n": 1,
+          "path": "assets/sounds/dolphin_blowhole1.ogg"
+        },
+        {
+          "label": "blowhole 2",
+          "action": "blowhole",
+          "n": 2,
+          "path": "assets/sounds/dolphin_blowhole2.ogg"
+        },
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/dolphin_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/dolphin_death2.ogg"
+        },
+        {
+          "label": "eat 1",
+          "action": "eat",
+          "n": 1,
+          "path": "assets/sounds/dolphin_eat1.ogg"
+        },
+        {
+          "label": "eat 2",
+          "action": "eat",
+          "n": 2,
+          "path": "assets/sounds/dolphin_eat2.ogg"
+        },
+        {
+          "label": "eat 3",
+          "action": "eat",
+          "n": 3,
+          "path": "assets/sounds/dolphin_eat3.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/dolphin_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/dolphin_hurt2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/dolphin_hurt3.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/dolphin_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/dolphin_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/dolphin_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/dolphin_idle4.ogg"
+        },
+        {
+          "label": "idle 5",
+          "action": "idle",
+          "n": 5,
+          "path": "assets/sounds/dolphin_idle5.ogg"
+        },
+        {
+          "label": "idle 6",
+          "action": "idle",
+          "n": 6,
+          "path": "assets/sounds/dolphin_idle6.ogg"
+        },
+        {
+          "label": "idle water 1",
+          "action": "idle water",
+          "n": 1,
+          "path": "assets/sounds/dolphin_idle_water1.ogg"
+        },
+        {
+          "label": "idle water 2",
+          "action": "idle water",
+          "n": 2,
+          "path": "assets/sounds/dolphin_idle_water2.ogg"
+        },
+        {
+          "label": "idle water 3",
+          "action": "idle water",
+          "n": 3,
+          "path": "assets/sounds/dolphin_idle_water3.ogg"
+        },
+        {
+          "label": "idle water 4",
+          "action": "idle water",
+          "n": 4,
+          "path": "assets/sounds/dolphin_idle_water4.ogg"
+        },
+        {
+          "label": "idle water 5",
+          "action": "idle water",
+          "n": 5,
+          "path": "assets/sounds/dolphin_idle_water5.ogg"
+        },
+        {
+          "label": "idle water 6",
+          "action": "idle water",
+          "n": 6,
+          "path": "assets/sounds/dolphin_idle_water6.ogg"
+        },
+        {
+          "label": "idle water 7",
+          "action": "idle water",
+          "n": 7,
+          "path": "assets/sounds/dolphin_idle_water7.ogg"
+        },
+        {
+          "label": "idle water 8",
+          "action": "idle water",
+          "n": 8,
+          "path": "assets/sounds/dolphin_idle_water8.ogg"
+        },
+        {
+          "label": "idle water 9",
+          "action": "idle water",
+          "n": 9,
+          "path": "assets/sounds/dolphin_idle_water9.ogg"
+        },
+        {
+          "label": "idle water 10",
+          "action": "idle water",
+          "n": 10,
+          "path": "assets/sounds/dolphin_idle_water10.ogg"
+        },
+        {
+          "label": "jump 1",
+          "action": "jump",
+          "n": 1,
+          "path": "assets/sounds/dolphin_jump1.ogg"
+        },
+        {
+          "label": "jump 2",
+          "action": "jump",
+          "n": 2,
+          "path": "assets/sounds/dolphin_jump2.ogg"
+        },
+        {
+          "label": "jump 3",
+          "action": "jump",
+          "n": 3,
+          "path": "assets/sounds/dolphin_jump3.ogg"
+        },
+        {
+          "label": "play 1",
+          "action": "play",
+          "n": 1,
+          "path": "assets/sounds/dolphin_play1.ogg"
+        },
+        {
+          "label": "play 2",
+          "action": "play",
+          "n": 2,
+          "path": "assets/sounds/dolphin_play2.ogg"
+        },
+        {
+          "label": "splash 1",
+          "action": "splash",
+          "n": 1,
+          "path": "assets/sounds/dolphin_splash1.ogg"
+        },
+        {
+          "label": "splash 2",
+          "action": "splash",
+          "n": 2,
+          "path": "assets/sounds/dolphin_splash2.ogg"
+        },
+        {
+          "label": "splash 3",
+          "action": "splash",
+          "n": 3,
+          "path": "assets/sounds/dolphin_splash3.ogg"
+        },
+        {
+          "label": "swim 1",
+          "action": "swim",
+          "n": 1,
+          "path": "assets/sounds/dolphin_swim1.ogg"
+        },
+        {
+          "label": "swim 2",
+          "action": "swim",
+          "n": 2,
+          "path": "assets/sounds/dolphin_swim2.ogg"
+        },
+        {
+          "label": "swim 3",
+          "action": "swim",
+          "n": 3,
+          "path": "assets/sounds/dolphin_swim3.ogg"
+        },
+        {
+          "label": "swim 4",
+          "action": "swim",
+          "n": 4,
+          "path": "assets/sounds/dolphin_swim4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/dolphin_attack1.ogg",
+      "texture": "assets/textures/dolphin.png",
+      "render": "assets/renders/dolphin.png",
+      "color": "#7a98b8"
+    },
+    {
+      "name": "Donkey",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "angry 1",
+          "action": "angry",
+          "n": 1,
+          "path": "assets/sounds/donkey_angry1.ogg"
+        },
+        {
+          "label": "angry 2",
+          "action": "angry",
+          "n": 2,
+          "path": "assets/sounds/donkey_angry2.ogg"
+        },
+        {
+          "label": "death",
+          "action": "death",
+          "n": 0,
+          "path": "assets/sounds/donkey_death.ogg"
+        }
+      ],
+      "sound": "assets/sounds/donkey_angry1.ogg",
+      "texture": "assets/textures/donkey.png",
+      "render": "assets/renders/donkey.png",
+      "color": "#7a5a3a"
+    },
+    {
+      "name": "Mule",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "angry 1",
+          "action": "angry",
+          "n": 1,
+          "path": "assets/sounds/mule_angry1.ogg"
+        },
+        {
+          "label": "angry 2",
+          "action": "angry",
+          "n": 2,
+          "path": "assets/sounds/mule_angry2.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/mule_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/mule_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/mule_idle3.ogg"
+        }
+      ],
+      "sound": "assets/sounds/mule_angry1.ogg",
+      "texture": "assets/textures/mule.png",
+      "render": "assets/renders/mule.png",
+      "color": "#5a3a2a"
+    },
+    {
+      "name": "Mooshroom",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "say 1",
+          "action": "say",
+          "n": 1,
+          "path": "assets/sounds/mooshroom_say1.ogg"
+        },
+        {
+          "label": "say 2",
+          "action": "say",
+          "n": 2,
+          "path": "assets/sounds/mooshroom_say2.ogg"
+        },
+        {
+          "label": "say 3",
+          "action": "say",
+          "n": 3,
+          "path": "assets/sounds/mooshroom_say3.ogg"
+        },
+        {
+          "label": "say 4",
+          "action": "say",
+          "n": 4,
+          "path": "assets/sounds/mooshroom_say4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/mooshroom_say1.ogg",
+      "texture": "assets/textures/mooshroom.png",
+      "render": "assets/renders/mooshroom.png",
+      "color": "#a02a2a"
+    },
+    {
+      "name": "Squid",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "ambient 1",
+          "action": "ambient",
+          "n": 1,
+          "path": "assets/sounds/squid_ambient1.ogg"
+        },
+        {
+          "label": "ambient 2",
+          "action": "ambient",
+          "n": 2,
+          "path": "assets/sounds/squid_ambient2.ogg"
+        },
+        {
+          "label": "ambient 3",
+          "action": "ambient",
+          "n": 3,
+          "path": "assets/sounds/squid_ambient3.ogg"
+        },
+        {
+          "label": "ambient 4",
+          "action": "ambient",
+          "n": 4,
+          "path": "assets/sounds/squid_ambient4.ogg"
+        },
+        {
+          "label": "ambient 5",
+          "action": "ambient",
+          "n": 5,
+          "path": "assets/sounds/squid_ambient5.ogg"
+        }
+      ],
+      "sound": "assets/sounds/squid_ambient1.ogg",
+      "texture": "assets/textures/squid.png",
+      "render": "assets/renders/squid.png",
+      "color": "#3a3a5a"
+    },
+    {
+      "name": "Glow Squid",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "ambient 1",
+          "action": "ambient",
+          "n": 1,
+          "path": "assets/sounds/glow_squid_ambient1.ogg"
+        },
+        {
+          "label": "ambient 2",
+          "action": "ambient",
+          "n": 2,
+          "path": "assets/sounds/glow_squid_ambient2.ogg"
+        },
+        {
+          "label": "ambient 3",
+          "action": "ambient",
+          "n": 3,
+          "path": "assets/sounds/glow_squid_ambient3.ogg"
+        },
+        {
+          "label": "ambient 4",
+          "action": "ambient",
+          "n": 4,
+          "path": "assets/sounds/glow_squid_ambient4.ogg"
+        },
+        {
+          "label": "ambient 5",
+          "action": "ambient",
+          "n": 5,
+          "path": "assets/sounds/glow_squid_ambient5.ogg"
+        }
+      ],
+      "sound": "assets/sounds/glow_squid_ambient1.ogg",
+      "texture": "assets/textures/glow_squid.png",
+      "render": "assets/renders/glow_squid.png",
+      "color": "#3acba8"
+    },
+    {
+      "name": "Bat",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/bat_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/bat_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/bat_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/bat_idle4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/bat_idle1.ogg",
+      "texture": "assets/textures/bat.png",
+      "render": "assets/renders/bat.png",
+      "color": "#5a4a3a"
+    },
+    {
+      "name": "Rabbit",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/rabbit_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/rabbit_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/rabbit_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/rabbit_idle4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/rabbit_idle1.ogg",
+      "texture": "assets/textures/rabbit.png",
+      "render": "assets/renders/rabbit.png",
+      "color": "#a87858"
+    },
+    {
+      "name": "Ocelot",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "purr 1",
+          "action": "purr",
+          "n": 1,
+          "path": "assets/sounds/ocelot_purr1.ogg"
+        },
+        {
+          "label": "purr 2",
+          "action": "purr",
+          "n": 2,
+          "path": "assets/sounds/ocelot_purr2.ogg"
+        },
+        {
+          "label": "purr 3",
+          "action": "purr",
+          "n": 3,
+          "path": "assets/sounds/ocelot_purr3.ogg"
+        },
+        {
+          "label": "purreow 1",
+          "action": "purreow",
+          "n": 1,
+          "path": "assets/sounds/ocelot_purreow1.ogg"
+        },
+        {
+          "label": "purreow 2",
+          "action": "purreow",
+          "n": 2,
+          "path": "assets/sounds/ocelot_purreow2.ogg"
+        }
+      ],
+      "sound": "assets/sounds/ocelot_purr1.ogg",
+      "texture": "assets/textures/ocelot.png",
+      "render": "assets/renders/ocelot.png",
+      "color": "#e8a868"
+    },
+    {
+      "name": "Parrot",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/parrot_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/parrot_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/parrot_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/parrot_idle4.ogg"
+        },
+        {
+          "label": "idle 5",
+          "action": "idle",
+          "n": 5,
+          "path": "assets/sounds/parrot_idle5.ogg"
+        },
+        {
+          "label": "idle 6",
+          "action": "idle",
+          "n": 6,
+          "path": "assets/sounds/parrot_idle6.ogg"
+        }
+      ],
+      "sound": "assets/sounds/parrot_idle1.ogg",
+      "texture": "assets/textures/parrot.png",
+      "render": "assets/renders/parrot.png",
+      "color": "#3a78d8"
+    },
+    {
+      "name": "Turtle",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "armor",
+          "action": "armor",
+          "n": 0,
+          "path": "assets/sounds/turtle_armor.ogg"
+        },
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/turtle_death1.ogg"
+        },
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/turtle_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/turtle_death2.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/turtle_death2.ogg"
+        },
+        {
+          "label": "death 3",
+          "action": "death",
+          "n": 3,
+          "path": "assets/sounds/turtle_death3.ogg"
+        },
+        {
+          "label": "drop egg 1",
+          "action": "drop egg",
+          "n": 1,
+          "path": "assets/sounds/turtle_drop_egg1.ogg"
+        },
+        {
+          "label": "drop egg 2",
+          "action": "drop egg",
+          "n": 2,
+          "path": "assets/sounds/turtle_drop_egg2.ogg"
+        },
+        {
+          "label": "egg break 1",
+          "action": "egg break",
+          "n": 1,
+          "path": "assets/sounds/turtle_egg_break1.ogg"
+        },
+        {
+          "label": "egg break 2",
+          "action": "egg break",
+          "n": 2,
+          "path": "assets/sounds/turtle_egg_break2.ogg"
+        },
+        {
+          "label": "egg crack 1",
+          "action": "egg crack",
+          "n": 1,
+          "path": "assets/sounds/turtle_egg_crack1.ogg"
+        },
+        {
+          "label": "egg crack 2",
+          "action": "egg crack",
+          "n": 2,
+          "path": "assets/sounds/turtle_egg_crack2.ogg"
+        },
+        {
+          "label": "egg crack 3",
+          "action": "egg crack",
+          "n": 3,
+          "path": "assets/sounds/turtle_egg_crack3.ogg"
+        },
+        {
+          "label": "egg crack 4",
+          "action": "egg crack",
+          "n": 4,
+          "path": "assets/sounds/turtle_egg_crack4.ogg"
+        },
+        {
+          "label": "egg crack 5",
+          "action": "egg crack",
+          "n": 5,
+          "path": "assets/sounds/turtle_egg_crack5.ogg"
+        },
+        {
+          "label": "egg hatched 1",
+          "action": "egg hatched",
+          "n": 1,
+          "path": "assets/sounds/turtle_egg_hatched1.ogg"
+        },
+        {
+          "label": "egg hatched 2",
+          "action": "egg hatched",
+          "n": 2,
+          "path": "assets/sounds/turtle_egg_hatched2.ogg"
+        },
+        {
+          "label": "egg hatched 3",
+          "action": "egg hatched",
+          "n": 3,
+          "path": "assets/sounds/turtle_egg_hatched3.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/turtle_hurt1.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/turtle_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/turtle_hurt2.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/turtle_hurt2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/turtle_hurt3.ogg"
+        },
+        {
+          "label": "hurt 4",
+          "action": "hurt",
+          "n": 4,
+          "path": "assets/sounds/turtle_hurt4.ogg"
+        },
+        {
+          "label": "hurt 5",
+          "action": "hurt",
+          "n": 5,
+          "path": "assets/sounds/turtle_hurt5.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/turtle_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/turtle_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/turtle_idle3.ogg"
+        },
+        {
+          "label": "jump egg 1",
+          "action": "jump egg",
+          "n": 1,
+          "path": "assets/sounds/turtle_jump_egg1.ogg"
+        },
+        {
+          "label": "jump egg 2",
+          "action": "jump egg",
+          "n": 2,
+          "path": "assets/sounds/turtle_jump_egg2.ogg"
+        },
+        {
+          "label": "jump egg 3",
+          "action": "jump egg",
+          "n": 3,
+          "path": "assets/sounds/turtle_jump_egg3.ogg"
+        },
+        {
+          "label": "jump egg 4",
+          "action": "jump egg",
+          "n": 4,
+          "path": "assets/sounds/turtle_jump_egg4.ogg"
+        },
+        {
+          "label": "shamble 1",
+          "action": "shamble",
+          "n": 1,
+          "path": "assets/sounds/turtle_shamble1.ogg"
+        },
+        {
+          "label": "shamble 2",
+          "action": "shamble",
+          "n": 2,
+          "path": "assets/sounds/turtle_shamble2.ogg"
+        },
+        {
+          "label": "shamble 3",
+          "action": "shamble",
+          "n": 3,
+          "path": "assets/sounds/turtle_shamble3.ogg"
+        },
+        {
+          "label": "shamble 4",
+          "action": "shamble",
+          "n": 4,
+          "path": "assets/sounds/turtle_shamble4.ogg"
+        },
+        {
+          "label": "swim 1",
+          "action": "swim",
+          "n": 1,
+          "path": "assets/sounds/turtle_swim1.ogg"
+        },
+        {
+          "label": "swim 2",
+          "action": "swim",
+          "n": 2,
+          "path": "assets/sounds/turtle_swim2.ogg"
+        },
+        {
+          "label": "swim 3",
+          "action": "swim",
+          "n": 3,
+          "path": "assets/sounds/turtle_swim3.ogg"
+        },
+        {
+          "label": "swim 4",
+          "action": "swim",
+          "n": 4,
+          "path": "assets/sounds/turtle_swim4.ogg"
+        },
+        {
+          "label": "swim 5",
+          "action": "swim",
+          "n": 5,
+          "path": "assets/sounds/turtle_swim5.ogg"
+        },
+        {
+          "label": "walk 1",
+          "action": "walk",
+          "n": 1,
+          "path": "assets/sounds/turtle_walk1.ogg"
+        },
+        {
+          "label": "walk 2",
+          "action": "walk",
+          "n": 2,
+          "path": "assets/sounds/turtle_walk2.ogg"
+        },
+        {
+          "label": "walk 3",
+          "action": "walk",
+          "n": 3,
+          "path": "assets/sounds/turtle_walk3.ogg"
+        },
+        {
+          "label": "walk 4",
+          "action": "walk",
+          "n": 4,
+          "path": "assets/sounds/turtle_walk4.ogg"
+        },
+        {
+          "label": "walk 5",
+          "action": "walk",
+          "n": 5,
+          "path": "assets/sounds/turtle_walk5.ogg"
+        }
+      ],
+      "sound": "assets/sounds/turtle_armor.ogg",
+      "texture": "assets/textures/turtle.png",
+      "render": "assets/renders/turtle.png",
+      "color": "#5a9a6a"
+    },
+    {
+      "name": "Strider",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/strider_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/strider_death2.ogg"
+        },
+        {
+          "label": "death 3",
+          "action": "death",
+          "n": 3,
+          "path": "assets/sounds/strider_death3.ogg"
+        },
+        {
+          "label": "death 4",
+          "action": "death",
+          "n": 4,
+          "path": "assets/sounds/strider_death4.ogg"
+        },
+        {
+          "label": "eat 1",
+          "action": "eat",
+          "n": 1,
+          "path": "assets/sounds/strider_eat1.ogg"
+        },
+        {
+          "label": "eat 2",
+          "action": "eat",
+          "n": 2,
+          "path": "assets/sounds/strider_eat2.ogg"
+        },
+        {
+          "label": "eat 3",
+          "action": "eat",
+          "n": 3,
+          "path": "assets/sounds/strider_eat3.ogg"
+        },
+        {
+          "label": "happy 1",
+          "action": "happy",
+          "n": 1,
+          "path": "assets/sounds/strider_happy1.ogg"
+        },
+        {
+          "label": "happy 2",
+          "action": "happy",
+          "n": 2,
+          "path": "assets/sounds/strider_happy2.ogg"
+        },
+        {
+          "label": "happy 3",
+          "action": "happy",
+          "n": 3,
+          "path": "assets/sounds/strider_happy3.ogg"
+        },
+        {
+          "label": "happy 4",
+          "action": "happy",
+          "n": 4,
+          "path": "assets/sounds/strider_happy4.ogg"
+        },
+        {
+          "label": "happy 5",
+          "action": "happy",
+          "n": 5,
+          "path": "assets/sounds/strider_happy5.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/strider_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/strider_hurt2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/strider_hurt3.ogg"
+        },
+        {
+          "label": "hurt 4",
+          "action": "hurt",
+          "n": 4,
+          "path": "assets/sounds/strider_hurt4.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/strider_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/strider_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/strider_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/strider_idle4.ogg"
+        },
+        {
+          "label": "idle 5",
+          "action": "idle",
+          "n": 5,
+          "path": "assets/sounds/strider_idle5.ogg"
+        },
+        {
+          "label": "idle 6",
+          "action": "idle",
+          "n": 6,
+          "path": "assets/sounds/strider_idle6.ogg"
+        },
+        {
+          "label": "retreat 1",
+          "action": "retreat",
+          "n": 1,
+          "path": "assets/sounds/strider_retreat1.ogg"
+        },
+        {
+          "label": "retreat 2",
+          "action": "retreat",
+          "n": 2,
+          "path": "assets/sounds/strider_retreat2.ogg"
+        },
+        {
+          "label": "retreat 3",
+          "action": "retreat",
+          "n": 3,
+          "path": "assets/sounds/strider_retreat3.ogg"
+        },
+        {
+          "label": "retreat 4",
+          "action": "retreat",
+          "n": 4,
+          "path": "assets/sounds/strider_retreat4.ogg"
+        },
+        {
+          "label": "retreat 5",
+          "action": "retreat",
+          "n": 5,
+          "path": "assets/sounds/strider_retreat5.ogg"
+        },
+        {
+          "label": "step 1",
+          "action": "step",
+          "n": 1,
+          "path": "assets/sounds/strider_step1.ogg"
+        },
+        {
+          "label": "step 2",
+          "action": "step",
+          "n": 2,
+          "path": "assets/sounds/strider_step2.ogg"
+        },
+        {
+          "label": "step 3",
+          "action": "step",
+          "n": 3,
+          "path": "assets/sounds/strider_step3.ogg"
+        },
+        {
+          "label": "step 4",
+          "action": "step",
+          "n": 4,
+          "path": "assets/sounds/strider_step4.ogg"
+        },
+        {
+          "label": "step 5",
+          "action": "step",
+          "n": 5,
+          "path": "assets/sounds/strider_step5.ogg"
+        },
+        {
+          "label": "step lava 1",
+          "action": "step lava",
+          "n": 1,
+          "path": "assets/sounds/strider_step_lava1.ogg"
+        },
+        {
+          "label": "step lava 2",
+          "action": "step lava",
+          "n": 2,
+          "path": "assets/sounds/strider_step_lava2.ogg"
+        },
+        {
+          "label": "step lava 3",
+          "action": "step lava",
+          "n": 3,
+          "path": "assets/sounds/strider_step_lava3.ogg"
+        },
+        {
+          "label": "step lava 4",
+          "action": "step lava",
+          "n": 4,
+          "path": "assets/sounds/strider_step_lava4.ogg"
+        },
+        {
+          "label": "step lava 5",
+          "action": "step lava",
+          "n": 5,
+          "path": "assets/sounds/strider_step_lava5.ogg"
+        },
+        {
+          "label": "step lava 6",
+          "action": "step lava",
+          "n": 6,
+          "path": "assets/sounds/strider_step_lava6.ogg"
+        }
+      ],
+      "sound": "assets/sounds/strider_death1.ogg",
+      "texture": "assets/textures/strider.png",
+      "render": "assets/renders/strider.png",
+      "color": "#a83a4a"
+    },
+    {
+      "name": "Frog",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/frog_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/frog_death2.ogg"
+        },
+        {
+          "label": "death 3",
+          "action": "death",
+          "n": 3,
+          "path": "assets/sounds/frog_death3.ogg"
+        },
+        {
+          "label": "eat 1",
+          "action": "eat",
+          "n": 1,
+          "path": "assets/sounds/frog_eat1.ogg"
+        },
+        {
+          "label": "eat 2",
+          "action": "eat",
+          "n": 2,
+          "path": "assets/sounds/frog_eat2.ogg"
+        },
+        {
+          "label": "eat 3",
+          "action": "eat",
+          "n": 3,
+          "path": "assets/sounds/frog_eat3.ogg"
+        },
+        {
+          "label": "eat 4",
+          "action": "eat",
+          "n": 4,
+          "path": "assets/sounds/frog_eat4.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/frog_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/frog_hurt2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/frog_hurt3.ogg"
+        },
+        {
+          "label": "hurt 4",
+          "action": "hurt",
+          "n": 4,
+          "path": "assets/sounds/frog_hurt4.ogg"
+        },
+        {
+          "label": "hurt 5",
+          "action": "hurt",
+          "n": 5,
+          "path": "assets/sounds/frog_hurt5.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/frog_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/frog_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/frog_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/frog_idle4.ogg"
+        },
+        {
+          "label": "idle 5",
+          "action": "idle",
+          "n": 5,
+          "path": "assets/sounds/frog_idle5.ogg"
+        },
+        {
+          "label": "idle 6",
+          "action": "idle",
+          "n": 6,
+          "path": "assets/sounds/frog_idle6.ogg"
+        },
+        {
+          "label": "idle 7",
+          "action": "idle",
+          "n": 7,
+          "path": "assets/sounds/frog_idle7.ogg"
+        },
+        {
+          "label": "idle 8",
+          "action": "idle",
+          "n": 8,
+          "path": "assets/sounds/frog_idle8.ogg"
+        },
+        {
+          "label": "lay spawn 1",
+          "action": "lay spawn",
+          "n": 1,
+          "path": "assets/sounds/frog_lay_spawn1.ogg"
+        },
+        {
+          "label": "lay spawn 2",
+          "action": "lay spawn",
+          "n": 2,
+          "path": "assets/sounds/frog_lay_spawn2.ogg"
+        },
+        {
+          "label": "long jump 1",
+          "action": "long jump",
+          "n": 1,
+          "path": "assets/sounds/frog_long_jump1.ogg"
+        },
+        {
+          "label": "long jump 2",
+          "action": "long jump",
+          "n": 2,
+          "path": "assets/sounds/frog_long_jump2.ogg"
+        },
+        {
+          "label": "long jump 3",
+          "action": "long jump",
+          "n": 3,
+          "path": "assets/sounds/frog_long_jump3.ogg"
+        },
+        {
+          "label": "long jump 4",
+          "action": "long jump",
+          "n": 4,
+          "path": "assets/sounds/frog_long_jump4.ogg"
+        },
+        {
+          "label": "step 1",
+          "action": "step",
+          "n": 1,
+          "path": "assets/sounds/frog_step1.ogg"
+        },
+        {
+          "label": "step 2",
+          "action": "step",
+          "n": 2,
+          "path": "assets/sounds/frog_step2.ogg"
+        },
+        {
+          "label": "step 3",
+          "action": "step",
+          "n": 3,
+          "path": "assets/sounds/frog_step3.ogg"
+        },
+        {
+          "label": "step 4",
+          "action": "step",
+          "n": 4,
+          "path": "assets/sounds/frog_step4.ogg"
+        },
+        {
+          "label": "tongue 1",
+          "action": "tongue",
+          "n": 1,
+          "path": "assets/sounds/frog_tongue1.ogg"
+        },
+        {
+          "label": "tongue 2",
+          "action": "tongue",
+          "n": 2,
+          "path": "assets/sounds/frog_tongue2.ogg"
+        },
+        {
+          "label": "tongue 3",
+          "action": "tongue",
+          "n": 3,
+          "path": "assets/sounds/frog_tongue3.ogg"
+        },
+        {
+          "label": "tongue 4",
+          "action": "tongue",
+          "n": 4,
+          "path": "assets/sounds/frog_tongue4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/frog_death1.ogg",
+      "texture": "assets/textures/frog.png",
+      "render": "assets/renders/frog.png",
+      "color": "#a8c83a"
+    },
+    {
+      "name": "Tadpole",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/tadpole_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/tadpole_death2.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/tadpole_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/tadpole_hurt2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/tadpole_hurt3.ogg"
+        },
+        {
+          "label": "hurt 4",
+          "action": "hurt",
+          "n": 4,
+          "path": "assets/sounds/tadpole_hurt4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/tadpole_death1.ogg",
+      "texture": "assets/textures/tadpole.png",
+      "render": "assets/renders/tadpole.png",
+      "color": "#3a2a1a"
+    },
+    {
+      "name": "Sniffer",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "death 1",
+          "action": "death",
+          "n": 1,
+          "path": "assets/sounds/sniffer_death1.ogg"
+        },
+        {
+          "label": "death 2",
+          "action": "death",
+          "n": 2,
+          "path": "assets/sounds/sniffer_death2.ogg"
+        },
+        {
+          "label": "digging stop 1",
+          "action": "digging stop",
+          "n": 1,
+          "path": "assets/sounds/sniffer_digging_stop1.ogg"
+        },
+        {
+          "label": "digging stop 2",
+          "action": "digging stop",
+          "n": 2,
+          "path": "assets/sounds/sniffer_digging_stop2.ogg"
+        },
+        {
+          "label": "eat 1",
+          "action": "eat",
+          "n": 1,
+          "path": "assets/sounds/sniffer_eat1.ogg"
+        },
+        {
+          "label": "eat 2",
+          "action": "eat",
+          "n": 2,
+          "path": "assets/sounds/sniffer_eat2.ogg"
+        },
+        {
+          "label": "eat 3",
+          "action": "eat",
+          "n": 3,
+          "path": "assets/sounds/sniffer_eat3.ogg"
+        },
+        {
+          "label": "happy 1",
+          "action": "happy",
+          "n": 1,
+          "path": "assets/sounds/sniffer_happy1.ogg"
+        },
+        {
+          "label": "happy 2",
+          "action": "happy",
+          "n": 2,
+          "path": "assets/sounds/sniffer_happy2.ogg"
+        },
+        {
+          "label": "happy 3",
+          "action": "happy",
+          "n": 3,
+          "path": "assets/sounds/sniffer_happy3.ogg"
+        },
+        {
+          "label": "happy 4",
+          "action": "happy",
+          "n": 4,
+          "path": "assets/sounds/sniffer_happy4.ogg"
+        },
+        {
+          "label": "happy 5",
+          "action": "happy",
+          "n": 5,
+          "path": "assets/sounds/sniffer_happy5.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/sniffer_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/sniffer_hurt2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/sniffer_hurt3.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/sniffer_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/sniffer_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/sniffer_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/sniffer_idle4.ogg"
+        },
+        {
+          "label": "idle 5",
+          "action": "idle",
+          "n": 5,
+          "path": "assets/sounds/sniffer_idle5.ogg"
+        },
+        {
+          "label": "idle 6",
+          "action": "idle",
+          "n": 6,
+          "path": "assets/sounds/sniffer_idle6.ogg"
+        },
+        {
+          "label": "idle 7",
+          "action": "idle",
+          "n": 7,
+          "path": "assets/sounds/sniffer_idle7.ogg"
+        },
+        {
+          "label": "idle 8",
+          "action": "idle",
+          "n": 8,
+          "path": "assets/sounds/sniffer_idle8.ogg"
+        },
+        {
+          "label": "idle 9",
+          "action": "idle",
+          "n": 9,
+          "path": "assets/sounds/sniffer_idle9.ogg"
+        },
+        {
+          "label": "idle 10",
+          "action": "idle",
+          "n": 10,
+          "path": "assets/sounds/sniffer_idle10.ogg"
+        },
+        {
+          "label": "idle 11",
+          "action": "idle",
+          "n": 11,
+          "path": "assets/sounds/sniffer_idle11.ogg"
+        },
+        {
+          "label": "longdig 1",
+          "action": "longdig",
+          "n": 1,
+          "path": "assets/sounds/sniffer_longdig1.ogg"
+        },
+        {
+          "label": "longdig 2",
+          "action": "longdig",
+          "n": 2,
+          "path": "assets/sounds/sniffer_longdig2.ogg"
+        },
+        {
+          "label": "scenting 1",
+          "action": "scenting",
+          "n": 1,
+          "path": "assets/sounds/sniffer_scenting1.ogg"
+        },
+        {
+          "label": "scenting 2",
+          "action": "scenting",
+          "n": 2,
+          "path": "assets/sounds/sniffer_scenting2.ogg"
+        },
+        {
+          "label": "scenting 3",
+          "action": "scenting",
+          "n": 3,
+          "path": "assets/sounds/sniffer_scenting3.ogg"
+        },
+        {
+          "label": "searching 1",
+          "action": "searching",
+          "n": 1,
+          "path": "assets/sounds/sniffer_searching1.ogg"
+        },
+        {
+          "label": "searching 2",
+          "action": "searching",
+          "n": 2,
+          "path": "assets/sounds/sniffer_searching2.ogg"
+        },
+        {
+          "label": "searching 3",
+          "action": "searching",
+          "n": 3,
+          "path": "assets/sounds/sniffer_searching3.ogg"
+        },
+        {
+          "label": "searching 4",
+          "action": "searching",
+          "n": 4,
+          "path": "assets/sounds/sniffer_searching4.ogg"
+        },
+        {
+          "label": "searching 5",
+          "action": "searching",
+          "n": 5,
+          "path": "assets/sounds/sniffer_searching5.ogg"
+        },
+        {
+          "label": "searching 6",
+          "action": "searching",
+          "n": 6,
+          "path": "assets/sounds/sniffer_searching6.ogg"
+        },
+        {
+          "label": "sniffing 1",
+          "action": "sniffing",
+          "n": 1,
+          "path": "assets/sounds/sniffer_sniffing1.ogg"
+        },
+        {
+          "label": "sniffing 2",
+          "action": "sniffing",
+          "n": 2,
+          "path": "assets/sounds/sniffer_sniffing2.ogg"
+        },
+        {
+          "label": "sniffing 3",
+          "action": "sniffing",
+          "n": 3,
+          "path": "assets/sounds/sniffer_sniffing3.ogg"
+        },
+        {
+          "label": "step 1",
+          "action": "step",
+          "n": 1,
+          "path": "assets/sounds/sniffer_step1.ogg"
+        },
+        {
+          "label": "step 2",
+          "action": "step",
+          "n": 2,
+          "path": "assets/sounds/sniffer_step2.ogg"
+        },
+        {
+          "label": "step 3",
+          "action": "step",
+          "n": 3,
+          "path": "assets/sounds/sniffer_step3.ogg"
+        },
+        {
+          "label": "step 4",
+          "action": "step",
+          "n": 4,
+          "path": "assets/sounds/sniffer_step4.ogg"
+        },
+        {
+          "label": "step 5",
+          "action": "step",
+          "n": 5,
+          "path": "assets/sounds/sniffer_step5.ogg"
+        },
+        {
+          "label": "step 6",
+          "action": "step",
+          "n": 6,
+          "path": "assets/sounds/sniffer_step6.ogg"
+        }
+      ],
+      "sound": "assets/sounds/sniffer_death1.ogg",
+      "texture": "assets/textures/sniffer.png",
+      "render": "assets/renders/sniffer.png",
+      "color": "#5a7a5a"
+    },
+    {
+      "name": "Camel",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "ambient 1",
+          "action": "ambient",
+          "n": 1,
+          "path": "assets/sounds/camel_ambient1.ogg"
+        },
+        {
+          "label": "ambient 2",
+          "action": "ambient",
+          "n": 2,
+          "path": "assets/sounds/camel_ambient2.ogg"
+        },
+        {
+          "label": "ambient 3",
+          "action": "ambient",
+          "n": 3,
+          "path": "assets/sounds/camel_ambient3.ogg"
+        },
+        {
+          "label": "ambient 4",
+          "action": "ambient",
+          "n": 4,
+          "path": "assets/sounds/camel_ambient4.ogg"
+        },
+        {
+          "label": "ambient 5",
+          "action": "ambient",
+          "n": 5,
+          "path": "assets/sounds/camel_ambient5.ogg"
+        },
+        {
+          "label": "ambient 6",
+          "action": "ambient",
+          "n": 6,
+          "path": "assets/sounds/camel_ambient6.ogg"
+        },
+        {
+          "label": "ambient 7",
+          "action": "ambient",
+          "n": 7,
+          "path": "assets/sounds/camel_ambient7.ogg"
+        },
+        {
+          "label": "ambient 8",
+          "action": "ambient",
+          "n": 8,
+          "path": "assets/sounds/camel_ambient8.ogg"
+        }
+      ],
+      "sound": "assets/sounds/camel_ambient1.ogg",
+      "texture": "assets/textures/camel.png",
+      "render": "assets/renders/camel.png",
+      "color": "#d8b878"
+    },
+    {
+      "name": "Wandering Trader",
+      "type": "passive",
+      "sounds": [
+        {
+          "label": "appeared 1",
+          "action": "appeared",
+          "n": 1,
+          "path": "assets/sounds/wandering_trader_appeared1.ogg"
+        },
+        {
+          "label": "appeared 2",
+          "action": "appeared",
+          "n": 2,
+          "path": "assets/sounds/wandering_trader_appeared2.ogg"
+        },
+        {
+          "label": "death",
+          "action": "death",
+          "n": 0,
+          "path": "assets/sounds/wandering_trader_death.ogg"
+        },
+        {
+          "label": "disappeared 1",
+          "action": "disappeared",
+          "n": 1,
+          "path": "assets/sounds/wandering_trader_disappeared1.ogg"
+        },
+        {
+          "label": "disappeared 2",
+          "action": "disappeared",
+          "n": 2,
+          "path": "assets/sounds/wandering_trader_disappeared2.ogg"
+        },
+        {
+          "label": "drink milk 1",
+          "action": "drink milk",
+          "n": 1,
+          "path": "assets/sounds/wandering_trader_drink_milk1.ogg"
+        },
+        {
+          "label": "drink milk 2",
+          "action": "drink milk",
+          "n": 2,
+          "path": "assets/sounds/wandering_trader_drink_milk2.ogg"
+        },
+        {
+          "label": "drink milk 3",
+          "action": "drink milk",
+          "n": 3,
+          "path": "assets/sounds/wandering_trader_drink_milk3.ogg"
+        },
+        {
+          "label": "drink milk 4",
+          "action": "drink milk",
+          "n": 4,
+          "path": "assets/sounds/wandering_trader_drink_milk4.ogg"
+        },
+        {
+          "label": "drink milk 5",
+          "action": "drink milk",
+          "n": 5,
+          "path": "assets/sounds/wandering_trader_drink_milk5.ogg"
+        },
+        {
+          "label": "drink potion",
+          "action": "drink potion",
+          "n": 0,
+          "path": "assets/sounds/wandering_trader_drink_potion.ogg"
+        },
+        {
+          "label": "haggle 1",
+          "action": "haggle",
+          "n": 1,
+          "path": "assets/sounds/wandering_trader_haggle1.ogg"
+        },
+        {
+          "label": "haggle 2",
+          "action": "haggle",
+          "n": 2,
+          "path": "assets/sounds/wandering_trader_haggle2.ogg"
+        },
+        {
+          "label": "haggle 3",
+          "action": "haggle",
+          "n": 3,
+          "path": "assets/sounds/wandering_trader_haggle3.ogg"
+        },
+        {
+          "label": "hurt 1",
+          "action": "hurt",
+          "n": 1,
+          "path": "assets/sounds/wandering_trader_hurt1.ogg"
+        },
+        {
+          "label": "hurt 2",
+          "action": "hurt",
+          "n": 2,
+          "path": "assets/sounds/wandering_trader_hurt2.ogg"
+        },
+        {
+          "label": "hurt 3",
+          "action": "hurt",
+          "n": 3,
+          "path": "assets/sounds/wandering_trader_hurt3.ogg"
+        },
+        {
+          "label": "hurt 4",
+          "action": "hurt",
+          "n": 4,
+          "path": "assets/sounds/wandering_trader_hurt4.ogg"
+        },
+        {
+          "label": "idle 1",
+          "action": "idle",
+          "n": 1,
+          "path": "assets/sounds/wandering_trader_idle1.ogg"
+        },
+        {
+          "label": "idle 2",
+          "action": "idle",
+          "n": 2,
+          "path": "assets/sounds/wandering_trader_idle2.ogg"
+        },
+        {
+          "label": "idle 3",
+          "action": "idle",
+          "n": 3,
+          "path": "assets/sounds/wandering_trader_idle3.ogg"
+        },
+        {
+          "label": "idle 4",
+          "action": "idle",
+          "n": 4,
+          "path": "assets/sounds/wandering_trader_idle4.ogg"
+        },
+        {
+          "label": "idle 5",
+          "action": "idle",
+          "n": 5,
+          "path": "assets/sounds/wandering_trader_idle5.ogg"
+        },
+        {
+          "label": "no 1",
+          "action": "no",
+          "n": 1,
+          "path": "assets/sounds/wandering_trader_no1.ogg"
+        },
+        {
+          "label": "no 2",
+          "action": "no",
+          "n": 2,
+          "path": "assets/sounds/wandering_trader_no2.ogg"
+        },
+        {
+          "label": "no 3",
+          "action": "no",
+          "n": 3,
+          "path": "assets/sounds/wandering_trader_no3.ogg"
+        },
+        {
+          "label": "no 4",
+          "action": "no",
+          "n": 4,
+          "path": "assets/sounds/wandering_trader_no4.ogg"
+        },
+        {
+          "label": "no 5",
+          "action": "no",
+          "n": 5,
+          "path": "assets/sounds/wandering_trader_no5.ogg"
+        },
+        {
+          "label": "reappeared 1",
+          "action": "reappeared",
+          "n": 1,
+          "path": "assets/sounds/wandering_trader_reappeared1.ogg"
+        },
+        {
+          "label": "reappeared 2",
+          "action": "reappeared",
+          "n": 2,
+          "path": "assets/sounds/wandering_trader_reappeared2.ogg"
+        },
+        {
+          "label": "yes 1",
+          "action": "yes",
+          "n": 1,
+          "path": "assets/sounds/wandering_trader_yes1.ogg"
+        },
+        {
+          "label": "yes 2",
+          "action": "yes",
+          "n": 2,
+          "path": "assets/sounds/wandering_trader_yes2.ogg"
+        },
+        {
+          "label": "yes 3",
+          "action": "yes",
+          "n": 3,
+          "path": "assets/sounds/wandering_trader_yes3.ogg"
+        },
+        {
+          "label": "yes 4",
+          "action": "yes",
+          "n": 4,
+          "path": "assets/sounds/wandering_trader_yes4.ogg"
+        }
+      ],
+      "sound": "assets/sounds/wandering_trader_appeared1.ogg",
+      "texture": "assets/textures/wandering_trader.png",
+      "render": "assets/renders/wandering_trader.png",
+      "color": "#3a5a98"
+    }
+  ]
+}

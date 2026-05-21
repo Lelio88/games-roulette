@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Roulette</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="#" class="brand" id="brand-link">
+      <span class="brand-icon" aria-hidden="true">🎲</span>
+      <span class="brand-name">La Roulette</span>
+    </a>
+    <div class="topbar-right">
+      <div id="room-info" class="room-info" hidden>
+        <span class="room-info-dot" aria-hidden="true"></span>
+        <span class="room-info-count"><span id="player-count">1</span> joueur·s</span>
+        <button id="room-share" class="room-share" type="button" title="Copier le lien d'invitation">
+          <span aria-hidden="true">🔗</span>
+          <span class="room-share-label">Copier le lien</span>
+        </button>
+        <button id="room-leave" class="room-leave" type="button">Quitter</button>
+      </div>
+      <nav id="game-nav" class="game-nav" aria-label="Sélection du jeu"></nav>
+    </div>
+  </header>
+
+  <!-- Landing : mode selector -->
+  <section id="landing" class="landing">
+    <div class="landing-card">
+      <h2 class="landing-title">Comment veux-tu jouer ?</h2>
+      <p class="landing-subtitle">Choisis ton mode pour commencer.</p>
+      <div class="mode-options">
+        <button class="mode-card" data-mode="solo" type="button">
+          <span class="mode-icon" aria-hidden="true">🎰</span>
+          <h3>Solo</h3>
+          <p>Lance la roulette tout seul, à ton rythme.</p>
+        </button>
+        <button class="mode-card" data-mode="multi" type="button">
+          <span class="mode-icon" aria-hidden="true">👥</span>
+          <h3>Multi</h3>
+          <p>Joue avec des amis sur la même roue, en partageant un lien.</p>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Multi setup : create or join -->
+  <section id="multi-setup" class="multi-setup" hidden>
+    <div class="pseudo-row">
+      <label for="multi-pseudo" class="pseudo-label">Ton pseudo</label>
+      <input id="multi-pseudo" class="pseudo-input" maxlength="20" placeholder="Ex : Alex" />
+    </div>
+    <div class="multi-cols">
+      <div class="multi-col">
+        <h3>🚪 Créer une room</h3>
+        <p>Tu seras l'hôte, et tu partages le lien d'invitation.</p>
+        <button id="multi-create" class="primary-btn" type="button">Créer une room</button>
+        <div id="multi-create-result" class="multi-create-result" hidden>
+          <p>Room prête. Partage ce lien :</p>
+          <div class="link-box">
+            <input id="multi-link" readonly />
+            <button id="multi-copy" type="button">Copier</button>
+          </div>
+          <p class="wait-msg">En attente de joueurs…</p>
+        </div>
+      </div>
+
+      <div class="multi-divider" aria-hidden="true">ou</div>
+
+      <div class="multi-col">
+        <h3>🔗 Rejoindre une room</h3>
+        <p>Colle le lien d'invitation ou le code de room que tu as reçu.</p>
+        <input id="multi-join-input" class="multi-join-input" placeholder="Code de room ou lien complet" />
+        <button id="multi-join" class="primary-btn" type="button">Rejoindre</button>
+      </div>
+    </div>
+    <button id="multi-back" class="link-btn" type="button">← Retour</button>
+  </section>
+
+  <main class="app">
+    <section id="coming-soon" class="coming-soon" hidden>
+      <div class="coming-soon-icon" id="cs-icon" aria-hidden="true">🚧</div>
+      <h2 id="cs-title">Bientôt disponible</h2>
+      <p id="cs-desc">Cette roulette arrivera dans une prochaine version.</p>
+      <button id="cs-back" class="cs-back" type="button">← Retour à Minecraft</button>
+    </section>
+
+    <div id="game-content" hidden>
+      <!-- Reveal banner at top (multi only) -->
+      <section id="reveal-top" class="reveal-top" hidden>
+        <div class="reveal-top-image-wrap">
+          <img id="reveal-top-image" class="reveal-top-image" alt="" />
+        </div>
+        <div class="reveal-top-info">
+          <span class="reveal-top-label">Entité tirée</span>
+          <h2 id="reveal-top-name" class="reveal-top-name">—</h2>
+          <div id="reveal-top-sounds" class="panel-sounds"></div>
+        </div>
+      </section>
+
+      <fieldset id="filters" class="filters">
+        <legend class="filters-legend">Filtrer par type</legend>
+        <label class="filter-chip" data-type="hostile">
+          <input type="checkbox" value="hostile" checked />
+          <span class="chip-dot"></span>
+          <span class="chip-label">Hostiles</span>
+          <span class="chip-count" data-count></span>
+        </label>
+        <label class="filter-chip" data-type="neutral">
+          <input type="checkbox" value="neutral" checked />
+          <span class="chip-dot"></span>
+          <span class="chip-label">Neutres</span>
+          <span class="chip-count" data-count></span>
+        </label>
+        <label class="filter-chip" data-type="passive">
+          <input type="checkbox" value="passive" checked />
+          <span class="chip-dot"></span>
+          <span class="chip-label">Passifs</span>
+          <span class="chip-count" data-count></span>
+        </label>
+        <label class="filter-chip" data-type="boss">
+          <input type="checkbox" value="boss" checked />
+          <span class="chip-dot"></span>
+          <span class="chip-label">Boss</span>
+          <span class="chip-count" data-count></span>
+        </label>
+      </fieldset>
+
+      <section class="stage">
+        <aside id="tracker" class="tracker">
+          <header class="tracker-header">
+            <h3 class="tracker-title">
+              Tirage
+              <span id="tracker-count" class="tracker-count">0 / 0</span>
+            </h3>
+            <button id="tracker-reset" class="tracker-reset" type="button" title="Réinitialiser">
+              ⟲ Reset
+            </button>
+          </header>
+          <ul id="tracker-list" class="tracker-list" role="list"></ul>
+        </aside>
+
+        <div class="wheel-side">
+          <div class="wheel-container">
+            <div class="pointer" aria-hidden="true"></div>
+            <canvas id="wheel" width="600" height="600"></canvas>
+          </div>
+          <button id="spin-btn" class="spin-btn" type="button">
+            <span class="spin-btn-label">Lancer la roulette</span>
+          </button>
+        </div>
+
+        <aside id="entity-panel" class="entity-panel" aria-live="polite">
+          <div id="panel-empty" class="panel-empty">
+            <div class="empty-orb" aria-hidden="true">?</div>
+            <p>Lance la roulette pour<br />révéler une entité.</p>
+          </div>
+
+          <div id="panel-content" class="panel-content" hidden>
+            <div class="panel-glow" aria-hidden="true"></div>
+            <div class="panel-image-wrapper">
+              <div class="panel-rays" aria-hidden="true">
+                <div class="panel-rays-inner panel-rays-cw"></div>
+                <div class="panel-rays-inner panel-rays-ccw"></div>
+              </div>
+              <img id="panel-image" class="panel-image" alt="" />
+              <div class="panel-shimmer" aria-hidden="true"></div>
+              <div class="panel-scan" aria-hidden="true"></div>
+            </div>
+            <div class="panel-meta">
+              <span class="panel-label">Entité tirée</span>
+              <h2 id="panel-name" class="panel-name">—</h2>
+            </div>
+            <div id="panel-sounds" class="panel-sounds"></div>
+          </div>
+
+          <!-- Multi mode : scoreboard -->
+          <div id="scoreboard" class="scoreboard" hidden>
+            <h3 class="scoreboard-title">🏆 Podium</h3>
+            <ul id="scoreboard-list" class="scoreboard-list" role="list"></ul>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Guess bar at bottom (multi only) -->
+      <section id="buzz-bar" class="buzz-bar" hidden>
+        <div id="buzz-status" class="buzz-status">En attente du tirage…</div>
+        <form id="guess-form" class="guess-form" autocomplete="off">
+          <input id="guess-input" class="guess-input" type="text" placeholder="Tape le nom de l'entité…" maxlength="40" disabled />
+          <button id="guess-submit" class="guess-submit" type="submit" disabled>Deviner</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
