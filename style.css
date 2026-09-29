@@ -30,6 +30,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
+  overflow-y: auto;
   background:
     radial-gradient(ellipse at 25% 25%, rgba(90, 203, 122, 0.18) 0%, transparent 60%),
     radial-gradient(ellipse at 75% 75%, rgba(122, 159, 255, 0.18) 0%, transparent 60%),
@@ -47,6 +48,7 @@
 .landing-card {
   width: 100%;
   max-width: 720px;
+  margin: auto; /* centre sans couper le haut quand la carte dépasse l'écran */
   text-align: center;
 }
 
@@ -192,7 +194,8 @@
   font-weight: 700;
 }
 
-.multi-col p {
+.multi-col p,
+.multi-col label {
   color: var(--text-dim);
   font-size: 0.9rem;
   line-height: 1.5;
@@ -1590,4 +1593,78 @@ body {
   .entity-panel { padding: 1.5rem 1rem; min-height: 360px; }
   .panel-image-wrapper { width: 180px; height: 180px; }
   .panel-name { font-size: 1.6rem; }
+}
+
+/* ----- Champs : erreur, information, libellé masqué ----- */
+
+.field-error {
+  color: #ff8a8a;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.field-info {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ----- Liens légaux (accueil, pied de page) et pages légales ----- */
+
+.landing-legal,
+.site-footer {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.landing-legal { margin-top: 2rem; }
+
+.site-footer { padding: 0 1.5rem 2rem; }
+
+.landing-legal a,
+.site-footer a,
+.field-info a,
+.legal a {
+  color: var(--accent);
+}
+
+.legal {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+  line-height: 1.6;
+}
+
+.legal h1 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  margin-bottom: 1.5rem;
+}
+
+.legal h2 {
+  font-size: 1.15rem;
+  margin: 2rem 0 0.6rem;
+}
+
+.legal p,
+.legal ul { margin-bottom: 0.9rem; }
+
+.legal ul { padding-left: 1.3rem; }
+
+.legal li { margin-bottom: 0.4rem; }
+
+.legal .maj {
+  color: var(--text-dim);
+  font-size: 0.9rem;
 }

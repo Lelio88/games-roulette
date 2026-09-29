@@ -38,11 +38,19 @@ Pour une partie à plusieurs, l'hôte crée un salon depuis l'écran d'accueil e
 
 Le mode solo ne demande rien. Le mode multi s'appuie sur Firebase Realtime Database et l'authentification anonyme. La configuration du projet est en clair dans `script.js`, ce qui est le modèle attendu d'une application web Firebase : la sécurité repose sur les règles de la base, pas sur la confidentialité de cette configuration.
 
-Pour brancher votre propre projet Firebase, remplacez l'objet de configuration en tête de `script.js`, puis définissez les règles de la base. Chaque chemin `rooms/*` écrit par un client doit être couvert par une règle, sans quoi le multi est soit bloqué, soit ouvert à tous.
+Les règles de la base sont versionnées dans `database.rules.json`. Pour les éprouver sur l'émulateur local (Java requis), puis les déployer :
+
+```bash
+npx firebase-tools emulators:exec --only database "node tests/regles.test.mjs"
+npx firebase-tools deploy --only database
+```
+
+Pour brancher votre propre projet Firebase, remplacez l'objet de configuration en tête de `script.js` et l'identifiant de projet dans `.firebaserc`, puis déployez ces règles.
 
 ## Dépannage
 
 | Symptôme | Cause | Correction |
 |---|---|---|
 | Page blanche, erreurs de module dans la console | Fichier ouvert en `file://` | Servir par HTTP : `python -m http.server 8000` |
-| Le multi ne démarre pas, la console parle de permissions | Règles Realtime Database absentes ou trop strictes | Couvrir les chemins `rooms/*` dans la console Firebase |
+| Le multi ne démarre pas, la console parle de permissions | Règles non déployées, ou écriture nouvelle non couverte par `database.rules.json` | Ajouter la règle et son cas de test, puis redéployer |
+| « requests-from-referer … are-blocked » en local | La clé Firebase n'accepte pas `127.0.0.1` | Ouvrir `http://localhost:8000` |

@@ -43,6 +43,9 @@
           <p>Joue avec des amis sur la même roue, en partageant un lien.</p>
         </button>
       </div>
+      <p class="landing-legal">
+        <a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a>
+      </p>
     </div>
   </section>
 
@@ -50,7 +53,12 @@
   <section id="multi-setup" class="multi-setup" hidden>
     <div class="pseudo-row">
       <label for="multi-pseudo" class="pseudo-label">Ton pseudo</label>
-      <input id="multi-pseudo" class="pseudo-input" maxlength="20" placeholder="Ex : Alex" />
+      <input id="multi-pseudo" class="pseudo-input" maxlength="20" placeholder="Ex : Alex" aria-describedby="multi-pseudo-error multi-pseudo-info" />
+      <p id="multi-pseudo-error" class="field-error" role="alert"></p>
+      <p id="multi-pseudo-info" class="field-info">
+        Ton pseudo et tes propositions sont visibles de quiconque a le lien du salon et transitent par Firebase (Google).
+        Ils sont effacés à la fermeture du salon. <a href="confidentialite.html">En savoir plus</a>
+      </p>
     </div>
     <div class="multi-cols">
       <div class="multi-col">
@@ -58,7 +66,7 @@
         <p>Tu seras l'hôte, et tu partages le lien d'invitation.</p>
         <button id="multi-create" class="primary-btn" type="button">Créer une room</button>
         <div id="multi-create-result" class="multi-create-result" hidden>
-          <p>Room prête. Partage ce lien :</p>
+          <label for="multi-link">Room prête. Partage ce lien :</label>
           <div class="link-box">
             <input id="multi-link" readonly />
             <button id="multi-copy" type="button">Copier</button>
@@ -71,7 +79,7 @@
 
       <div class="multi-col">
         <h3>🔗 Rejoindre une room</h3>
-        <p>Colle le lien d'invitation ou le code de room que tu as reçu.</p>
+        <label for="multi-join-input">Colle le lien d'invitation ou le code de room que tu as reçu.</label>
         <input id="multi-join-input" class="multi-join-input" placeholder="Code de room ou lien complet" />
         <button id="multi-join" class="primary-btn" type="button">Rejoindre</button>
       </div>
@@ -188,12 +196,17 @@
       <section id="buzz-bar" class="buzz-bar" hidden>
         <div id="buzz-status" class="buzz-status">En attente du tirage…</div>
         <form id="guess-form" class="guess-form" autocomplete="off">
+          <label for="guess-input" class="visually-hidden">Nom de l'entité</label>
           <input id="guess-input" class="guess-input" type="text" placeholder="Tape le nom de l'entité…" maxlength="40" disabled />
           <button id="guess-submit" class="guess-submit" type="submit" disabled>Deviner</button>
         </form>
       </section>
     </div>
   </main>
+
+  <footer class="site-footer">
+    <a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a>
+  </footer>
 
   <script type="module" src="script.js"></script>
 </body>

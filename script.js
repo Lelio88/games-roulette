@@ -1,13 +1,10 @@
 // ---------- Firebase ----------
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
-import {
-  getDatabase, ref, set, get, update, push, child, remove,
-  onValue, onChildAdded, onDisconnect, off, serverTimestamp,
-} from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
-import {
-  getAuth, signInAnonymously, onAuthStateChanged,
-} from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
+// Le SDK n'est téléchargé qu'à l'entrée en multi (cf. initFirebase) : le mode solo
+// ne contacte aucun serveur tiers. Ces fonctions restent donc indéfinies avant.
+const FIREBASE_SDK = "https://www.gstatic.com/firebasejs/10.7.0";
+let ref, set, get, update, push, child, remove,
+  onValue, onChildAdded, onDisconnect, off, serverTimestamp;
 
 const FIREBASE_CONFIG = {
   apiKey: "AIzaSyA0sSQZ94xHTngATQqRSYO2OKyQehRpf_g",
@@ -24,34 +21,45 @@ let db = null;
 let auth = null;
 let authReadyPromise = null;
 
-async function initFirebase() {
+// Le verrou authReadyPromise est posé avant tout await : deux clics rapprochés
+// (Créer puis Rejoindre pendant le téléchargement) partagent la même initialisation.
+function initFirebase() {
   if (authReadyPromise) return authReadyPromise;
   if (FIREBASE_CONFIG.apiKey === "REMPLACE-MOI") {
     alert("Firebase n'est pas configuré. Édite script.js → objet FIREBASE_CONFIG en haut du fichier.");
-    return null;
+    return Promise.resolve(null);
   }
-  try {
-    firebaseApp = initializeApp(FIREBASE_CONFIG);
-    db = getDatabase(firebaseApp);
-    auth = getAuth(firebaseApp);
-
-    authReadyPromise = new Promise((resolve, reject) => {
-      const unsub = onAuthStateChanged(auth, (user) => {
-        if (user) { unsub(); resolve(user); }
-      }, reject);
-      signInAnonymously(auth).catch((err) => {
-        unsub();
-        reject(err);
-      });
-    });
-
-    return await authReadyPromise;
-  } catch (err) {
+  authReadyPromise = connectFirebase().catch((err) => {
     console.error("Firebase init failed:", err);
     alert("Erreur Firebase : " + err.message);
     authReadyPromise = null;
     return null;
-  }
+  });
+  return authReadyPromise;
+}
+
+async function connectFirebase() {
+  const [{ initializeApp }, database, { getAuth, signInAnonymously, onAuthStateChanged }] =
+    await Promise.all([
+      import(`${FIREBASE_SDK}/firebase-app.js`),
+      import(`${FIREBASE_SDK}/firebase-database.js`),
+      import(`${FIREBASE_SDK}/firebase-auth.js`),
+    ]);
+  ({ ref, set, get, update, push, child, remove,
+    onValue, onChildAdded, onDisconnect, off, serverTimestamp } = database);
+  firebaseApp ??= initializeApp(FIREBASE_CONFIG); // une nouvelle tentative réutilise l'app
+  db = database.getDatabase(firebaseApp);
+  auth = getAuth(firebaseApp);
+
+  return new Promise((resolve, reject) => {
+    const unsub = onAuthStateChanged(auth, (user) => {
+      if (user) { unsub(); resolve(user); }
+    }, reject);
+    signInAnonymously(auth).catch((err) => {
+      unsub();
+      reject(err);
+    });
+  });
 }
 
 // ---------- Games registry ----------
@@ -107,6 +115,7 @@ const csBack = document.getElementById("cs-back");
 const landing = document.getElementById("landing");
 const multiSetup = document.getElementById("multi-setup");
 const multiPseudoInput = document.getElementById("multi-pseudo");
+const multiPseudoError = document.getElementById("multi-pseudo-error");
 const multiCreateBtn = document.getElementById("multi-create");
 const multiCreateResult = document.getElementById("multi-create-result");
 const multiLinkInput = document.getElementById("multi-link");
@@ -172,11 +181,15 @@ function savePseudo(p) {
 function readPseudo() {
   const v = multiPseudoInput.value.trim().slice(0, 20);
   if (!v) {
+    multiPseudoError.textContent = "Choisis un pseudo pour jouer en multi.";
+    multiPseudoInput.setAttribute("aria-invalid", "true");
     multiPseudoInput.focus();
     multiPseudoInput.style.borderColor = "#ff6b6b";
     setTimeout(() => { multiPseudoInput.style.borderColor = ""; }, 1500);
     return null;
   }
+  multiPseudoError.textContent = "";
+  multiPseudoInput.removeAttribute("aria-invalid");
   savePseudo(v);
   return v;
 }
@@ -682,7 +695,8 @@ function playSoundChipInto(container, src, idx, btnEl) {
 
 function renderScoreboard(highlightId = null) {
   scoreboardList.innerHTML = "";
-  const arr = Object.entries(MULTI.players).map(([id, p]) => ({ id, ...p }));
+  // points forcé en nombre : il est inséré en innerHTML plus bas
+  const arr = Object.entries(MULTI.players).map(([id, p]) => ({ id, ...p, points: Number(p.points) || 0 }));
   if (arr.length === 0) {
     const li = document.createElement("li");
     li.className = "scoreboard-empty";
@@ -1094,6 +1108,7 @@ function enterMultiGame() {
   revealTop.classList.remove("revealing");
   setRoundPhase("idle");
   spinBtn.hidden = !MULTI.isHost;
+  trackerReset.hidden = !MULTI.isHost; // remise à zéro réservée à l'hôte (règles Firebase)
   renderScoreboard();
   playerCountEl.textContent = Object.keys(MULTI.players).length;
   if (MULTI.roomId) {
@@ -1130,6 +1145,7 @@ async function leaveRoom() {
   buzzBar.hidden = true;
   revealTop.hidden = true;
   spinBtn.hidden = false;
+  trackerReset.hidden = false;
   panelEmpty.hidden = false;
   showLanding();
 }
